@@ -7,10 +7,10 @@
     <meta name="twitter:title" content="BS DASHBOARD">
     <meta name="twitter:card" content="summary">
     <meta property="og:image" content="assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
-    <meta name="description" content="Basic admin dashboard shell with fixed sidebar and navbar.">
+    <meta name="description" content="Dental Management System">
     <meta property="og:type" content="website">
     <meta name="twitter:image" content="assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
-    <meta name="twitter:description" content="Basic admin dashboard shell with fixed sidebar and navbar.">
+    <meta name="twitter:description" content="Dental Management System">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180"
         href="assets/img/dashboard_180px.png?h=83b47f8c1fc6813f9b150537fe1875be">
     <link rel="icon" type="image/png" sizes="16x16"
