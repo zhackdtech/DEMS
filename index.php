@@ -135,24 +135,31 @@
         <div class="container">
             <!-- navbar -->
             <header class="py-3 mb-3">
-                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
-                    <div class="toggler d-flex flex-row align-items-center">
-                        <button type="button" id="sidebarCollapse" class="btn bg-transparent">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-
+                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 2fr 2fr;">
+                    <div class="breadcrumbs">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">CLINIC NAME</a></li>
+                                <li class="breadcrumb-item"><a href="#">DEMS</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">CLINIC</li>
+                            </ol>
+                        </nav>
                         &nbsp;BRAND
                     </div>
-
                     <div class="d-flex align-items-center">
-                        <form class="w-100 me-3" role="search">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                        </form>
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Recipient's username"
+                                aria-label="" aria-describedby="basic-addon2">
+                            <span class="input-group-text border-0" id="basic-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
 
                         <div class="flex-shrink-0 dropdown">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
+                                <img src="assets/img/users/administrator_male_500px.png" alt="mdo" width="32"
+                                    height="32" class="rounded-circle">
                             </a>
                             <ul class="dropdown-menu text-small shadow">
                                 <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -164,6 +171,10 @@
                                 <li><a class="dropdown-item" href="#">Sign out</a></li>
                             </ul>
                         </div>
+                        <button type="button" id="sidebarCollapse"
+                            class="btn border-0 bg-transparent d-block d-lg-none">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
                     </div>
                 </div>
             </header>
