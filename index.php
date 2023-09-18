@@ -235,7 +235,7 @@
                                         <div class="dropdown-list-image me-3">
                                             <img class="rounded-circle"
                                                 src="assets/img/users/about_me_male_500px.png" />
-                                            <div class="bg-danger status-indicator"></div>
+                                            <div class="bg-warning status-indicator"></div>
                                         </div>
                                         <div class="fw-bold">
                                             <div class="text-truncate">
@@ -253,7 +253,7 @@
                                         <div class="dropdown-list-image me-3">
                                             <img class="rounded-circle"
                                                 src="assets/img/users/business_man_in_blue_jacket_500px.png" />
-                                            <div class="bg-danger status-indicator"></div>
+                                            <div class="status-indicator"></div>
                                         </div>
                                         <div class="fw-bold">
                                             <div class="text-truncate">
@@ -311,7 +311,45 @@
                 </div>
             </nav>
             <!-- end navbar -->
+            <!-- main content -->
+            <div class="container">
+
+            </div>
+            <!-- end main content -->
+            <!-- footer -->
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                            <svg class="bi" width="30" height="24">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                        </a>
+                        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 SysGo Solutions</span>
+                    </div>
+
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a class="text-body-secondary" href="#">
+                                <i class="fa-brands fa-square-twitter fa-xl"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-dark" href="#">
+                                <i class="fa-brands fa-square-instagram fa-xl"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-body-secondary" href="#">
+                                <i class="fa-brands fa-square-facebook fa-xl"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+            <!-- end footer -->
         </div>
+        <!-- end main container -->
     </main>
     <!-- modals -->
 
