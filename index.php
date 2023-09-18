@@ -134,53 +134,188 @@
         <!-- end sidebar -->
         <div class="container">
             <!-- navbar -->
-            <header class="py-3 mb-3">
-                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 2fr 2fr;">
-                    <div class="breadcrumbs">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">CLINIC NAME</a></li>
-                                <li class="breadcrumb-item"><a href="#">DEMS</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">CLINIC</li>
-                            </ol>
-                        </nav>
-                        &nbsp;BRAND
-                    </div>
-                    <div class="d-flex align-items-center">
+            <nav class="navbar navbar-light navbar-expand bg-transparent shadow mt-4 topbar static-top nav-top">
+                <div class="container-fluid p-2">
+                    <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-transparent border-0" placeholder="Recipient's username"
-                                aria-label="" aria-describedby="basic-addon2">
-                            <span class="input-group-text border-0" id="basic-addon2">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </span>
+                            <input class="bg-light form-control border-0 small" type="text"
+                                placeholder="Search for ..." />
+                            <button class="btn btn-primary py-0" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
                         </div>
-
-                        <div class="flex-shrink-0 dropdown">
-                            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/img/users/administrator_male_500px.png" alt="mdo" width="32"
-                                    height="32" class="rounded-circle">
+                    </form>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link"
+                                aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                                <i class="fas fa-search"></i>
                             </a>
-                            <ul class="dropdown-menu text-small shadow">
-                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" id="sidebarCollapse"
-                            class="btn border-0 bg-transparent d-block d-lg-none">
-                            <i class="fa-solid fa-bars fa-lg"></i>
-                        </button>
-                    </div>
+                            <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="me-auto navbar-search w-100">
+                                    <div class="input-group mb-3">
+                                        <input class="bg-light form-control border-0 small" type="text"
+                                            placeholder="Search for ..." />
+                                        <button class="btn btn-primary py-0" type="button">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow">
+                                <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+                                    href="#">
+                                    <span class="badge bg-danger badge-counter">3+</span>
+                                    <i class="fas fa-bell"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">Alerts Center</h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-primary icon-circle">
+                                                <i class="fa-solid fa-chart-simple text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="small notif-date">September 19, 2023</span>
+                                            <p class="notif-title">Sales reporting ready to download.</p>
+                                        </div>
+                                    </a>
+
+                                    <a class="dropdown-item text-center small text-gray-500 view-notif" href="#">Show
+                                        All
+                                        Notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow">
+                                <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+                                    href="#">
+                                    <span class="badge bg-danger badge-counter">7</span>
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">Messages</h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3">
+                                            <img class="rounded-circle"
+                                                src="assets/img/users/administrator_male_500px.png" />
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate">
+                                                <span class="message-content">Hello? Is anyone there? Lorem ipsum dolor
+                                                    sit amet
+                                                </span>
+                                            </div>
+                                            <p class="small text-gray-500 mb-0 message-details">Wilmarx Cayabyab - 58m
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3">
+                                            <img class="rounded-circle"
+                                                src="assets/img/users/elvis_presley_500px.png" />
+                                            <div class="bg-danger status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate">
+                                                <span class="message-content">I think we should put something as a
+                                                    sample message here
+                                                </span>
+                                            </div>
+                                            <p class="small text-gray-500 mb-0 message-details">Elveys Presley - 3hrs
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3">
+                                            <img class="rounded-circle"
+                                                src="assets/img/users/about_me_male_500px.png" />
+                                            <div class="bg-danger status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate">
+                                                <span class="message-content">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Natus, illo placeat veniam voluptates dignissimos,
+                                                    nostrum voluptas quaerat veritatis consequatur laudantium
+                                                    repudiandae? Recusandae sed quasi illum odio commodi minima quisquam
+                                                    error.
+                                                </span>
+                                            </div>
+                                            <p class="small text-gray-500 mb-0 message-details">Business Man - 8hrs</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3">
+                                            <img class="rounded-circle"
+                                                src="assets/img/users/business_man_in_blue_jacket_500px.png" />
+                                            <div class="bg-danger status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate">
+                                                <span class="message-content">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Natus, illo placeat veniam voluptates dignissimos,
+                                                    nostrum voluptas quaerat veritatis consequatur laudantium
+                                                    repudiandae? Recusandae sed quasi illum odio commodi minima quisquam
+                                                    error.
+                                                </span>
+                                            </div>
+                                            <p class="small text-gray-500 mb-0 message-details">BJohn Doe - 12hrs</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500 view-notif" href="#">Show
+                                        All
+                                        Messages</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-end"
+                                aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow">
+                                <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+                                    href="#">
+                                    <span class="d-none d-lg-inline me-2 text-gray-600 small">Wilmarx Cayabyab</span>
+                                    <img class="border rounded-circle img-profile img-fluid"
+                                        style="max-height:20px; max-width:20px"
+                                        src="assets/img/users/administrator_male_500px.png" />
+                                </a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"
+                                    style="background-color:#F8F9FA">
+                                    <a class="dropdown-item user-links p-4 py-2" href="#">
+                                        <i class="icon fas fa-user fa-sm fa-fw me-2 text-gray-400"></i> Profile
+                                    </a>
+                                    <a class="dropdown-item user-links p-4 py-2" href="#">
+                                        <i class="icon fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i> Settings
+                                    </a>
+                                    <a class="dropdown-item user-links p-4 py-2" href="#">
+                                        <i class="icon fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>
+                                        Activity log</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item user-links p-4 py-2" href="#">
+                                        <i class="icon fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i> Logout
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                    </ul>
+                    <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-lg-none">
+                        <i class="fa-solid fa-bars fa-lg"></i>
+                    </button>
                 </div>
-            </header>
+            </nav>
             <!-- end navbar -->
         </div>
     </main>
+    <!-- modals -->
+
+    <!-- modals end -->
     <!--  javascripts -->
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
