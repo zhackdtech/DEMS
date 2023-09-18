@@ -37,13 +37,13 @@
     <main class="d-flex flex-nowrap">
         <!-- sidebar -->
         <div class="d-flex flex-column flex-shrink-0 p-4 bg-body-tertiary" style="width: 280px;" id="sidebar">
-            <div>
-                <a href="/"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <span class="fs-4 sidenav-brand">Sidebar</span>
+            <div class="py-3">
+                <a href="#"
+                    class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4 sidenav-brand">SYSGO - DEMS</span>
                 </a>
             </div>
-            <hr>
+            <hr class="sidenav-divider">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item nav-label p-1">
                     MANAGEMENT
@@ -57,7 +57,7 @@
                 <li class="nav-item p-1">
                     <a href="#" class="nav-link p-2" aria-current="page">
                         <i class="nav-icon fa-solid fa-person p-3"></i>
-                        &nbsp;Home
+                        &nbsp;Patients
                     </a>
                 </li>
             </ul>
