@@ -45,15 +45,18 @@
             </div>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item nav-label p-1">
+                    MANAGEMENT
+                </li>
                 <li class="nav-item p-1">
-                    <a href="#" class="nav-link active p-3" aria-current="page">
-                        <i class="bs-icon fa-solid fa-house p-3"></i>
-                        &nbsp;Home
+                    <a href="#" class="nav-link active p-2" aria-current="page">
+                        <i class="nav-icon fa-solid fa-house p-3"></i>
+                        &nbsp;Clinics
                     </a>
                 </li>
                 <li class="nav-item p-1">
-                    <a href="#" class="nav-link p-3" aria-current="page">
-                        <i class="bs-icon fa-solid fa-house p-3"></i>
+                    <a href="#" class="nav-link p-2" aria-current="page">
+                        <i class="nav-icon fa-solid fa-person p-3"></i>
                         &nbsp;Home
                     </a>
                 </li>
@@ -68,7 +71,7 @@
                         <button type="button" id="sidebarCollapse" class="btn bg-transparent">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                        
+
                         &nbsp;BRAND
                     </div>
 
@@ -80,8 +83,7 @@
                         <div class="flex-shrink-0 dropdown">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="" alt="mdo" width="32" height="32"
-                                    class="rounded-circle">
+                                <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
                             </a>
                             <ul class="dropdown-menu text-small shadow">
                                 <li><a class="dropdown-item" href="#">New project...</a></li>
