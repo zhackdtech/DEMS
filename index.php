@@ -37,27 +37,96 @@
     <main class="d-flex flex-nowrap">
         <!-- sidebar -->
         <div class="d-flex flex-column flex-shrink-0 p-4 bg-body-tertiary" style="width: 280px;" id="sidebar">
-            <div>
-                <a href="/"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <span class="fs-4 sidenav-brand">Sidebar</span>
+            <div class="py-3">
+                <a href="#"
+                    class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4 sidenav-brand">
+                        <i class="fa-solid fa-network-wired"></i>
+                        SYSGO - DEMS
+                    </span>
                 </a>
             </div>
-            <hr>
+            <hr class="sidenav-divider">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item nav-label p-1">
                     MANAGEMENT
                 </li>
                 <li class="nav-item p-1">
-                    <a href="#" class="nav-link active p-2" aria-current="page">
-                        <i class="nav-icon fa-solid fa-house p-3"></i>
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <i class="nav-icon fa-solid fa-building p-2"></i>
                         &nbsp;Clinics
                     </a>
                 </li>
                 <li class="nav-item p-1">
-                    <a href="#" class="nav-link p-2" aria-current="page">
-                        <i class="nav-icon fa-solid fa-person p-3"></i>
-                        &nbsp;Home
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-person p-2"></i>
+                        &nbsp;Patients
+                    </a>
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-calendar p-2"></i>
+                        &nbsp;Schedule
+                    </a>
+                </li>
+                <li class="nav-item nav-label p-1">
+                    REPORTING
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-chart-line p-2"></i>
+                        &nbsp;Daily reporting
+                    </a>
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-chart-simple p-2"></i>
+                        &nbsp;Sales reporting
+                    </a>
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-chart-column p-2"></i>
+                        &nbsp;Patients reporting
+                    </a>
+                </li>
+                <li class="nav-item nav-label p-1">
+                    TRANSACTIONS
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-money-bill p-2"></i>
+                        &nbsp;Sales history
+                    </a>
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-money-bill-transfer p-2"></i>
+                        &nbsp;Expenses
+                    </a>
+                </li>
+                <li class="nav-item nav-label p-1">
+                    USERS
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-users p-2"></i>
+                        &nbsp;Staffs
+                    </a>
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-user-doctor p-2"></i>
+                        &nbsp;Doctors
+                    </a>
+                </li>
+                <li class="nav-item nav-label p-1">
+                    SYSTEM
+                </li>
+                <li class="nav-item p-1">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="nav-icon fa-solid fa-clock-rotate-left p-2"></i>
+                        &nbsp;Logs
                     </a>
                 </li>
             </ul>
@@ -66,24 +135,31 @@
         <div class="container">
             <!-- navbar -->
             <header class="py-3 mb-3">
-                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
-                    <div class="toggler d-flex flex-row align-items-center">
-                        <button type="button" id="sidebarCollapse" class="btn bg-transparent">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-
+                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 2fr 2fr;">
+                    <div class="breadcrumbs">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">CLINIC NAME</a></li>
+                                <li class="breadcrumb-item"><a href="#">DEMS</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">CLINIC</li>
+                            </ol>
+                        </nav>
                         &nbsp;BRAND
                     </div>
-
                     <div class="d-flex align-items-center">
-                        <form class="w-100 me-3" role="search">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                        </form>
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Recipient's username"
+                                aria-label="" aria-describedby="basic-addon2">
+                            <span class="input-group-text border-0" id="basic-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
 
                         <div class="flex-shrink-0 dropdown">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
+                                <img src="assets/img/users/administrator_male_500px.png" alt="mdo" width="32"
+                                    height="32" class="rounded-circle">
                             </a>
                             <ul class="dropdown-menu text-small shadow">
                                 <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -95,6 +171,10 @@
                                 <li><a class="dropdown-item" href="#">Sign out</a></li>
                             </ul>
                         </div>
+                        <button type="button" id="sidebarCollapse"
+                            class="btn border-0 bg-transparent d-block d-lg-none">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
                     </div>
                 </div>
             </header>
