@@ -135,7 +135,7 @@
         <div class="container">
             <!-- navbar -->
             <header class="py-3 mb-3">
-                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 2fr 2fr;">
+                <div class="container-fluid d-grid gap-3 align-items-center nav-container " style="grid-template-columns: 2fr 2fr;">
                     <div class="breadcrumbs">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -148,9 +148,9 @@
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-transparent border-0" placeholder="Recipient's username"
+                            <input type="text" class="form-control bg-transparent input-search" placeholder="Search here"
                                 aria-label="" aria-describedby="basic-addon2">
-                            <span class="input-group-text border-0" id="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
                         </div>
