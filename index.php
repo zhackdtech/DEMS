@@ -48,14 +48,26 @@
             <!-- end navbar -->
             <!-- main content -->
             <div class="container">
-
+                <!-- header -->
+                <div class="row p-3">
+                    <!-- bread crumbs -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Branch</li>
+                            <li class="breadcrumb-item">DEMS</li>
+                            <li class="breadcrumb-item active" aria-current="page">Clinics</li>
+                        </ol>
+                    </nav>
+                    <!-- end breadcrumbs -->
+                </div>
+                <!-- end header -->
             </div>
             <!-- end main content -->
             <!-- footer -->
             <div class="container">
-            <?php
-            require "components/structure/footer.php";
-            ?>
+                <?php
+                require "components/structure/footer.php";
+                ?>
             </div>
             <!-- end footer -->
         </div>
