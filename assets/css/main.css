@@ -364,3 +364,69 @@ hr.sidenav-divider {
     font-weight: 600;
     line-height: 150%;
 }
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+    background-color: #17C1E8;
+}
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, .05);
+    background-clip: border-box;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+}
+
+.bg-active {
+    background-color: #17C1E8 !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+}
+
+.card-body .h2 {
+    color: #252F40;
+    font-family: "Open sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.553px;
+}
+
+.card-title {
+    margin-bottom: 1.25rem;
+    color: #67748E;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+    opacity: .6;
+}
+
+.card-stats .card-body {
+    padding: 1rem 1.5rem;
+}
