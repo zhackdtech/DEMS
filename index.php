@@ -31,6 +31,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +51,8 @@
             <!-- end navbar -->
             <!-- main content -->
             <div class="container tab-content">
-                <div class="tab-pane fade show active" id="clinic-tab" role="clinic-tab" aria-labelledby="clinic-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="clinic-tab" role="clinic-tab" aria-labelledby="clinic-tab"
+                    tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -60,8 +64,10 @@
                         </nav>
                     </div>
                     <!-- end breadcrumbs -->
+                    
                 </div>
-                <div class="tab-pane fade show" id="patients-tab" role="patients-tab" aria-labelledby="patients-tab" tabindex="0">
+                <div class="tab-pane fade show" id="patients-tab" role="patients-tab" aria-labelledby="patients-tab"
+                    tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -74,7 +80,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab" tabindex="0">
+                <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab"
+                    tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -87,7 +94,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="daily-reporting-tab" role="daily-reporting-tab" aria-labelledby="daily-reporting-tab" tabindex="0">
+                <div class="tab-pane fade show" id="daily-reporting-tab" role="daily-reporting-tab"
+                    aria-labelledby="daily-reporting-tab" tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -100,7 +108,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="sales-reporting-tab" role="sales-reporting-tab" aria-labelledby="sales-reporting-tab" tabindex="0">
+                <div class="tab-pane fade show" id="sales-reporting-tab" role="sales-reporting-tab"
+                    aria-labelledby="sales-reporting-tab" tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -113,7 +122,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="patients-reporting-tab" role="patients-reporting-tab" aria-labelledby="patients-reporting-tab" tabindex="0">
+                <div class="tab-pane fade show" id="patients-reporting-tab" role="patients-reporting-tab"
+                    aria-labelledby="patients-reporting-tab" tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -126,7 +136,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="sales-history-tab" role="sales-history-tab" aria-labelledby="sales-history-tab" tabindex="0">
+                <div class="tab-pane fade show" id="sales-history-tab" role="sales-history-tab"
+                    aria-labelledby="sales-history-tab" tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -139,7 +150,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="expenses-tab" role="expenses-tab" aria-labelledby="expenses-tab" tabindex="0">
+                <div class="tab-pane fade show" id="expenses-tab" role="expenses-tab" aria-labelledby="expenses-tab"
+                    tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -152,7 +164,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="staffs-tab" role="staffs-tab" aria-labelledby="staffs-tab" tabindex="0">
+                <div class="tab-pane fade show" id="staffs-tab" role="staffs-tab" aria-labelledby="staffs-tab"
+                    tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
@@ -165,7 +178,8 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <div class="tab-pane fade show" id="doctors-tab" role="doctors-tab" aria-labelledby="doctors-tab" tabindex="0">
+                <div class="tab-pane fade show" id="doctors-tab" role="doctors-tab" aria-labelledby="doctors-tab"
+                    tabindex="0">
                     <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">

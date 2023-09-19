@@ -3,7 +3,7 @@
         <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
                 <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..." />
-                <button class="btn btn-primary py-0" type="button">
+                <button class="btn btn-primary py-0" style="background-color:#17C1E8; border:none" type="button">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
@@ -160,7 +160,7 @@
             </li>
             <div class="d-none d-sm-block topbar-divider"></div>
         </ul>
-        <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-lg-none">
+        <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-lg-none" style="z-index:100">
             <i class="fa-solid fa-bars fa-lg"></i>
         </button>
     </div>

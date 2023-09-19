@@ -333,3 +333,22 @@ hr.sidenav-divider {
 .user-links .icon {
     background-color: var(--white);
 }
+
+.breadcrumb-item {
+    color: var(--gray-gray-400, #A0AEC0);
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 18px */
+}
+
+.breadcrumb-item.active {
+    color: var(--gray-gray-700, #2D3748);
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
