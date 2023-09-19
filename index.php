@@ -64,7 +64,13 @@
                         </nav>
                     </div>
                     <!-- end breadcrumbs -->
-                    
+                    <div class="row">
+                        <!-- Clinic cards -->
+                        <?php
+                            require "components/default/clinic-cards.php"
+                        ?>
+                        <!-- end clinic cards -->
+                    </div>
                 </div>
                 <div class="tab-pane fade show" id="patients-tab" role="patients-tab" aria-labelledby="patients-tab"
                     tabindex="0">
