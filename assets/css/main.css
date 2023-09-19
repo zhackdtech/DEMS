@@ -101,7 +101,7 @@ a {
 
 .nav-link {
     color: var(--gray-gray-400, #A0AEC0);
-    font-family: Helvetica;
+    font-family: "Open sans";
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -124,6 +124,7 @@ a {
 
 /* .nav-link:hover .nav-icon  */
     {
+    font-weight: 800;
     background-color: var(--icon-active-bg);
     color: var(--white)
 }
@@ -166,6 +167,16 @@ hr.sidenav-divider {
     border-radius: 15px;
     border: 0.5px solid var(--gray-gray-200, #E2E8F0);
     background: var(--black-amp-white-white, #FFF);
+}
+
+.nav-search {
+    color: #252F40;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.387px;
 }
 
 .nav-top {
@@ -269,13 +280,14 @@ hr.sidenav-divider {
 }
 
 .notif-date, .message-details {
-    color: var(--gray-gray-400, #A0AEC0);
-    font-family: Helvetica;
+    color: #252F40;
+    font-family: "Open sans";
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
-    /* 18px */
+    line-height: normal;
+    letter-spacing: -0.387px;
+    opacity: .4;
 }
 
 .icon-circle {
@@ -288,18 +300,18 @@ hr.sidenav-divider {
 }
 
 .notif-title {
-    color: var(--gray-gray-700, #2D3748);
-    font-family: Helvetica;
+    color: #252F40;
+    font-family: "Open sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%;
-    /* 19.6px */
+    line-height: normal;
+    letter-spacing: -0.443px;
 }
 
 .view-notif {
     color: var(--gray-gray-400, #A0AEC0);
-    font-family: Helvetica;
+    font-family: "Open sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -307,13 +319,13 @@ hr.sidenav-divider {
 }
 
 .message-content {
-    color: var(--gray-gray-700, #2D3748);
-    font-family: Helvetica;
+    color: #252F40;
+    font-family: "Open sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%;
-    /* 19.6px */
+    line-height: normal;
+    letter-spacing: -0.443px;
 }
 
 .user-links {
@@ -332,4 +344,23 @@ hr.sidenav-divider {
 
 .user-links .icon {
     background-color: var(--white);
+}
+
+.breadcrumb-item {
+    color: var(--gray-gray-400, #A0AEC0);
+    font-family: "Open sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 18px */
+}
+
+.breadcrumb-item.active {
+    color: var(--gray-gray-700, #2D3748);
+    font-family: "Open sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
 }
