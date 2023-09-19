@@ -12,7 +12,7 @@
                         <div class="dropdown-center clinic-dropdown">
                             <div class="icon icon-shape bg-active text-white shadow">
                                 <a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-gear text-white"></i></a>
-                                <ul class="dropdown-menu p-1">
+                                <ul class="dropdown-menu p-1 animate slideIn">
                                     <li>
                                         <a class="dropdown-item clinic-dropdown-item" href="#">
                                             <i class="fa-solid fa-eye"></i>
@@ -49,7 +49,7 @@
                         <div class="dropdown-center clinic-dropdown">
                             <div class="icon icon-shape bg-active text-white shadow">
                                 <a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-gear text-white"></i></a>
-                                <ul class="dropdown-menu p-1">
+                                <ul class="dropdown-menu p-1 animate slideIn">
                                     <li>
                                         <a class="dropdown-item clinic-dropdown-item" href="#">
                                             <i class="fa-solid fa-eye"></i>
@@ -89,7 +89,7 @@
                         <div class="dropdown-center clinic-dropdown">
                             <div class="icon icon-shape bg-active text-white shadow">
                                 <a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-gear text-white"></i></a>
-                                <ul class="dropdown-menu p-1">
+                                <ul class="dropdown-menu p-1 animate slideIn">
                                     <li>
                                         <a class="dropdown-item clinic-dropdown-item" href="#">
                                             <i class="fa-solid fa-eye"></i>
@@ -132,7 +132,7 @@
                         <div class="dropdown-center clinic-dropdown">
                             <div class="icon icon-shape bg-active text-white shadow">
                                 <a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-gear text-white"></i></a>
-                                <ul class="dropdown-menu p-1">
+                                <ul class="dropdown-menu p-1 animate slideIn">
                                     <li>
                                         <a class="dropdown-item clinic-dropdown-item" href="#">
                                             <i class="fa-solid fa-eye"></i>
@@ -175,7 +175,7 @@
                         <div class="dropdown-center clinic-dropdown">
                             <div class="icon icon-shape bg-active text-white shadow">
                                 <a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-gear text-white"></i></a>
-                                <ul class="dropdown-menu p-1">
+                                <ul class="dropdown-menu p-1 animate slideIn">
                                     <li>
                                         <a class="dropdown-item clinic-dropdown-item" href="#">
                                             <i class="fa-solid fa-eye"></i>
@@ -218,7 +218,7 @@
                         <div class="dropdown-center clinic-dropdown">
                             <div class="icon icon-shape bg-active text-white shadow">
                                 <a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-gear text-white"></i></a>
-                                <ul class="dropdown-menu p-1">
+                                <ul class="dropdown-menu p-1 animate slideIn">
                                     <li>
                                         <a class="dropdown-item clinic-dropdown-item" href="#">
                                             <i class="fa-solid fa-eye"></i>
