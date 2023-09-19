@@ -162,7 +162,7 @@
             </li>
             <div class="d-none d-sm-block topbar-divider"></div>
         </ul>
-        <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-lg-none" style="z-index:100">
+        <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-xl-none" style="z-index:100">
             <i class="fa-solid fa-bars fa-lg"></i>
         </button>
     </div>
