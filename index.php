@@ -47,20 +47,150 @@
             ?>
             <!-- end navbar -->
             <!-- main content -->
-            <div class="container">
-                <!-- header -->
-                <div class="row p-3">
+            <div class="container tab-content">
+                <div class="tab-pane fade show active" id="clinic-tab" role="clinic-tab" aria-labelledby="clinic-tab" tabindex="0">
                     <!-- bread crumbs -->
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Branch</li>
-                            <li class="breadcrumb-item">DEMS</li>
-                            <li class="breadcrumb-item active" aria-current="page">Clinics</li>
-                        </ol>
-                    </nav>
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Clinics</li>
+                            </ol>
+                        </nav>
+                    </div>
                     <!-- end breadcrumbs -->
                 </div>
-                <!-- end header -->
+                <div class="tab-pane fade show" id="patients-tab" role="patients-tab" aria-labelledby="patients-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Patients</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="daily-reporting-tab" role="daily-reporting-tab" aria-labelledby="daily-reporting-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Daily Reporting</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="sales-reporting-tab" role="sales-reporting-tab" aria-labelledby="sales-reporting-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Sales Reporting</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="patients-reporting-tab" role="patients-reporting-tab" aria-labelledby="patients-reporting-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Patients Reporting</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="sales-history-tab" role="sales-history-tab" aria-labelledby="sales-history-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Sales History</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="expenses-tab" role="expenses-tab" aria-labelledby="expenses-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Expenses</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="staffs-tab" role="staffs-tab" aria-labelledby="staffs-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Staffs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="doctors-tab" role="doctors-tab" aria-labelledby="doctors-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
+                <div class="tab-pane fade show" id="logs-tab" role="logs-tab" aria-labelledby="logs-tab" tabindex="0">
+                    <!-- bread crumbs -->
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item active" aria-current="page">Logs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- end breadcrumbs -->
+                </div>
             </div>
             <!-- end main content -->
             <!-- footer -->
