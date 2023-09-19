@@ -2,7 +2,7 @@
     <div class="container-fluid p-2">
         <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-                <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..." />
+                <input class="bg-light form-control border-0 small nav-search" type="text" placeholder="Search for ..." />
                 <button class="btn btn-primary py-0" style="background-color:#17C1E8; border:none" type="button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -28,7 +28,8 @@
             <li class="nav-item dropdown no-arrow mx-1">
                 <div class="nav-item dropdown no-arrow">
                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                        <span class="badge bg-danger badge-counter">3+</span>
+                        <!-- <span class="badge bg-danger badge-counter">3+</span> -->
+                        <!-- no display if no new alerts -->
                         <i class="fas fa-bell"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
@@ -54,7 +55,8 @@
             <li class="nav-item dropdown no-arrow mx-1">
                 <div class="nav-item dropdown no-arrow">
                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                        <span class="badge bg-danger badge-counter">7</span>
+                        <span class="badge bg-danger badge-counter d-none">7</span>
+                        <!-- no display if no new Alerts -->
                         <i class="fas fa-envelope fa-fw"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
