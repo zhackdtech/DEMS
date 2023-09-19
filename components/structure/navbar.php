@@ -13,7 +13,7 @@
                     data-bs-toggle="dropdown" href="#">
                     <i class="fas fa-search"></i>
                 </a>
-                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in animate slideIn" aria-labelledby="searchDropdown">
                     <form class="me-auto navbar-search w-100">
                         <div class="input-group mb-3">
                             <input class="bg-light form-control border-0 small" type="text"
@@ -32,7 +32,7 @@
                         <!-- no display if no new alerts -->
                         <i class="fas fa-bell"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in  animate slideIn">
                         <h6 class="dropdown-header">Alerts Center</h6>
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="me-3">
@@ -59,7 +59,7 @@
                         <!-- no display if no new Alerts -->
                         <i class="fas fa-envelope fa-fw"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in  animate slideIn">
                         <h6 class="dropdown-header">Messages</h6>
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="dropdown-list-image me-3">
@@ -142,7 +142,7 @@
                         <img class="border rounded-circle img-profile img-fluid" style="max-height:20px; max-width:20px"
                             src="assets/img/users/administrator_male_500px.png" />
                     </a>
-                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"
+                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in  animate slideIn"
                         style="background-color:#F8F9FA">
                         <a class="dropdown-item user-links p-4 py-2" href="#">
                             <i class="icon fas fa-user fa-sm fa-fw me-2 text-gray-400"></i> Profile
@@ -162,7 +162,7 @@
             </li>
             <div class="d-none d-sm-block topbar-divider"></div>
         </ul>
-        <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-lg-none" style="z-index:100">
+        <button type="button" id="sidebarCollapse" class="btn border-0 bg-transparent d-block d-xl-none" style="z-index:100">
             <i class="fa-solid fa-bars fa-lg"></i>
         </button>
     </div>

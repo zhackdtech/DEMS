@@ -34,6 +34,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -67,8 +68,8 @@
                     <div class="row">
                         <!-- Clinic cards -->
                         <?php
-                            require "components/default/clinic-cards.php"
-                        ?>
+                        require "components/default/clinic-cards.php"
+                            ?>
                         <!-- end clinic cards -->
                     </div>
                 </div>
@@ -211,7 +212,9 @@
                     </div>
                     <!-- end breadcrumbs -->
                 </div>
+                <!-- end tab panes -->
             </div>
+            <!-- end tab panes container -->
             <!-- end main content -->
             <!-- footer -->
             <div class="container">
@@ -232,6 +235,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
 </html>

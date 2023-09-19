@@ -58,7 +58,7 @@ a {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #sidebar {
         background-color: var(--white) !important;
         position: absolute;
@@ -443,13 +443,95 @@ hr.sidenav-divider {
     border-radius: 16px;
     padding: 12px
 }
-.clinic-dropdown-item:hover
-{
+
+.clinic-dropdown-item:hover {
     background-color: var(--white);
 }
-.dropdown-menu
-{
+
+.dropdown-menu {
     border-radius: 16px;
     background-color: #F8F9FA;
-    transform: .3s all;
+    transform: .3s all ease-in-out;
+}
+
+@media (min-width: 200px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+.clinic-modal-title {
+    color: var(--white);
+    font-family: "Open sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.clinic-modal-button {
+    min-width: 80px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #17C1E8;
+    color: var(--white);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    border: none;
+    font-family: "Open sans";
+}
+.clinic-modal-button.success
+{
+    background-color: #48BB78;
+}
+.clinic-modal-button.danger
+{
+    background-color: #E53E3E;
+}
+.clinic-modal-button.primary
+{
+    background-color: #17C1E8;
 }
