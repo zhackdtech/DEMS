@@ -1,5 +1,5 @@
 <?php
-require "components/default/clinic-cards.php";
+require_once "components/default/clinic-cards.php";
 ?>
 
 <!DOCTYPE html>
@@ -77,11 +77,11 @@ require "components/default/clinic-cards.php";
                         // these are sample data only
                         $sample_addresses = array("Philippine - Laguna", "Philippine - Manila", "Philippine - Sta Cruz", "Philippine - Mindanao", "Japan - Tokyo", "Korea - Gangnam", );
                         $sample_branch_name = array("DMS - Laguna", "DMS - Manila", "DMS - Sta Cruz", "DMS - Mindanao", "DMS - Tokyo", "DMS - Gangnam", );
-                        // loop through your datas
+                        // loop through your data
                         for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
                             // feed the data to the class->getClinic()
                             // get clinic accepts three arguments id, branch name, address
-                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i]);
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i],"9638773839","123456789");
                         }
                         ?>
                         <!-- end clinic cards -->

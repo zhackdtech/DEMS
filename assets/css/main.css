@@ -3,7 +3,8 @@
     --nav-active-bg: #fff;
     --nav-active-color: #344767;
     --nav-color: #67748e;
-    --icon-active-bg: #17C1E8
+    --icon-active-bg: #17C1E8;
+    --color-dark: #252F40
 }
 
 body {
@@ -534,4 +535,46 @@ hr.sidenav-divider {
 
 .clinic-modal-button.primary {
     background-color: #17C1E8;
+}
+
+.border-right-0 {
+    border-right: 0px !important;
+}
+
+.border-left-0 {
+    border-left: 0px !important;
+}
+
+.border-bottom-0 {
+    border-bottom: 0px !important;
+}
+
+.border-top-0 {
+    border-top: 0px !important;
+}
+
+.form-label {
+    color: #252F40;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800 !important;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.clinic-modal-input {
+    color: #252F40;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.443px;
+    opacity: .6;
+}
+.clinic-status-dropdown:hover
+{
+    border-radius: 16px;
+    background-color: #fff !important;
 }
