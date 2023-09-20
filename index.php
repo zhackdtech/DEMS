@@ -230,6 +230,19 @@
 
     <!-- modals end -->
     <!--  javascripts -->
+    <script>
+        $(document).ready(function () {
+            $('a.sidebar-nav-link').on('shown.bs.tab', function (event) {
+                console.log(event.target);
+                localStorage.setItem('active', $(event.target).attr('href'));
+                console.log(localStorage.getItem('active'));
+            });
+            var activeTab = localStorage.getItem('active');
+            if (activeTab) {
+                $('#sidetabs a[href="' + activeTab + '"]').tab('show');
+            }
+        });
+    </script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
