@@ -42,13 +42,13 @@ class ClinicCard
                                         </li>
                                         <li>
                                             <a class="dropdown-item clinic-dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#edit_details_modals">
+                                                data-bs-target="#edit_details_modals" data-bs-clinicname="<?php echo $clinic_name;?>">
                                                 <i class="fa-solid fa-pen-to-square"></i>
                                                 &nbsp;Edit</a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item clinic-dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#archive_clinic_modals">
+                                                data-bs-target="#archive_clinic_modals" data-bs-clinicname="<?php echo $clinic_name;?>">
                                                 <i class="fa-solid fa-box-archive"></i>
                                                 &nbsp;Archive</a>
                                         </li>

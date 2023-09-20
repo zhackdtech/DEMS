@@ -65,9 +65,11 @@
                 <div class="row p-2 px-3">
                     <div class="col-12 p-1">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" disabled>
+                            <input type="text" class="clinic-modal-input form-control" id="clinic_state" disabled>
                             <button class="btn bg-primary dropdown-toggle text-light" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false"  disabled><i class="fa-solid fa-power-off"></i></button>
+                                data-bs-toggle="dropdown" aria-expanded="false"  disabled>
+                                <i class="fa-solid fa-power-off"></i>
+                            </button>
                             <ul class="dropdown-menu dropdown-menu-end animate slideIn p-1">
                                 <li>
                                     <a class="dropdown-item clinic-dropdown-item" href="#">
