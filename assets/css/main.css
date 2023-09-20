@@ -507,7 +507,7 @@ hr.sidenav-divider {
     font-family: "Open sans";
     font-size: 13px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
     letter-spacing: -0.36px;
 }
@@ -523,15 +523,15 @@ hr.sidenav-divider {
     border: none;
     font-family: "Open sans";
 }
-.clinic-modal-button.success
-{
+
+.clinic-modal-button.success {
     background-color: #48BB78;
 }
-.clinic-modal-button.danger
-{
+
+.clinic-modal-button.danger {
     background-color: #E53E3E;
 }
-.clinic-modal-button.primary
-{
+
+.clinic-modal-button.primary {
     background-color: #17C1E8;
 }

@@ -1,7 +1,7 @@
 <div class="row">
     <!--  loop the results of clinics from database here -->
     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
-        <div class="card card-stats mb-4 mb-xl-0 py-2">
+        <div class="card card-stats mb-4 mb-xl-0 py-2 h-100">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -42,7 +42,7 @@
     </div>
     <!-- end loop -->
     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
-        <div class="card card-stats mb-4 mb-xl-0 py-2">
+        <div class="card card-stats mb-4 mb-xl-0 py-2 h-100">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -82,7 +82,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
-        <div class="card card-stats mb-4 mb-xl-0 py-2">
+        <div class="card card-stats mb-4 mb-xl-0 py-2 h-100">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -125,7 +125,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
-        <div class="card card-stats mb-4 mb-xl-0 py-2">
+        <div class="card card-stats mb-4 mb-xl-0 py-2 h-100">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -168,7 +168,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pb-2 mb-3">
-        <div class="card card-stats mb-4 mb-xl-0 py-2">
+        <div class="card card-stats mb-4 mb-xl-0 py-2 h-100">
             <div class="card-body">
                 <div class="row y-1">
                     <div class="col">
@@ -211,7 +211,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pb-2 mb-3">
-        <div class="card card-stats mb-4 mb-xl-0 py-2">
+        <div class="card card-stats mb-4 mb-xl-0 py-2 h-100">
             <div class="card-body">
                 <div class="row y-1">
                     <div class="col">
@@ -280,7 +280,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header text-white" style="background:#344767">
+            <div class="modal-header text-white secondary-bg" style="background:#344767">
                 <h1 class="modal-title fs-5 clinic-modal-title" id="exampleModalLabel">Edit Clinic</h1>
             </div>
             <div class="modal-body clinic-modal-body">
