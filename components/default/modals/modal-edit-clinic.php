@@ -12,7 +12,7 @@
                         <div class="mb-3">
                             <label for="clinic_address" class="form-label">Branch Address</label>
                             <div class="input-group">
-                                <span class="input-group-text border-right-0 bg-primary text-white" id="clinic_address">
+                                <span class="input-group-text border-right-0 bg-dark-blue text-white" id="clinic_address">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
@@ -25,7 +25,7 @@
                         <div class="mb-3">
                             <label for="clinic_name" class="form-label">Branch Name</label>
                             <div class="input-group">
-                                <span class="input-group-text border-right-0 bg-primary text-white" id="clinic_name">
+                                <span class="input-group-text border-right-0 bg-dark-blue text-white" id="clinic_name">
                                     <i class="fa-solid fa-id-card"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
@@ -40,7 +40,7 @@
                         <div class="mb-3">
                             <label for="branch_mobile" class="form-label">Branch Mobile</label>
                             <div class="input-group">
-                                <span class="input-group-text border-right-0 bg-primary text-white" id="branch_mobile">
+                                <span class="input-group-text border-right-0 bg-dark-blue text-white" id="branch_mobile">
                                     <i class="fa-solid fa-mobile"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
@@ -53,7 +53,7 @@
                         <div class="mb-3">
                             <label for="branch_telehone" class="form-label">Branch Telephone</label>
                             <div class="input-group">
-                                <span class="input-group-text border-right-0 bg-primary text-white"
+                                <span class="input-group-text border-right-0 bg-dark-blue text-white"
                                     id="branch_telehone">
                                     <i class="fa-solid fa-phone"></i>
                                 </span>
@@ -68,7 +68,7 @@
                     <div class="col-12 p-1">
                         <div class="input-group mb-3">
                             <input type="text" class="clinic-modal-input form-control" id="clinic_state" >
-                            <button class="btn bg-primary dropdown-toggle text-light" type="button"
+                            <button class="btn bg-dark-blue dropdown-toggle text-light" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" >
                                 <i class="fa-solid fa-power-off"></i>
                             </button>
@@ -96,4 +96,4 @@
     </div>
 </div>
 <!-- edit clinic details modal end -->
-<script src="./components/default/components/modals/modal-edit-clinic.js"></script>
+<script src="./components/default/modals/modal-edit-clinic.js"></script>

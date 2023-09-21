@@ -1,6 +1,6 @@
-const exampleModal = document.getElementById('view_details_modals')
-if (exampleModal) {
-    exampleModal.addEventListener('show.bs.modal', event => {
+const edit_modal = document.getElementById('edit_details_modals')
+if (edit_modal) {
+    edit_modal.addEventListener('show.bs.modal', event => {
         // Button that triggered the modal
         const button = event.relatedTarget
         // Extract info from data-bs-* attributes
@@ -9,8 +9,8 @@ if (exampleModal) {
         // and then do the updating in a callback.
 
         // Update the modal's content.
-        const modalTitle = exampleModal.querySelector('.modal-title')
+        const modalTitle = edit_modal.querySelector('.modal-title')
 
-        modalTitle.textContent = `Viewing details of: ${clinicName}`
+        modalTitle.textContent = `Editing branch of: ${clinicName}`
     })
 }

@@ -1,6 +1,7 @@
 <?php
 require_once "components/default/clinic-cards.php";
-?>
+require_once "components/patients/patients.php"
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,6 +69,11 @@ require_once "components/default/clinic-cards.php";
                             </ol>
                         </nav>
                     </div>
+                    <div class="d-flex flex-row flex-row-reverse py-3">
+                        <?php
+                        require_once "components/default/new-clinic.php";
+                        ?>
+                    </div>
                     <!-- end breadcrumbs -->
                     <div class="row">
                         <!-- Clinic cards -->
@@ -81,7 +87,7 @@ require_once "components/default/clinic-cards.php";
                         for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
                             // feed the data to the class->getClinic()
                             // get clinic accepts three arguments id, branch name, address
-                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i],"9638773839","123456789");
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
                         }
                         ?>
                         <!-- end clinic cards -->
@@ -89,7 +95,6 @@ require_once "components/default/clinic-cards.php";
                 </div>
                 <div class="tab-pane fade show" id="patients-tab" role="patients-tab" aria-labelledby="patients-tab"
                     tabindex="0">
-                    <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -99,7 +104,24 @@ require_once "components/default/clinic-cards.php";
                             </ol>
                         </nav>
                     </div>
-                    <!-- end breadcrumbs -->
+                    <div class="d-flex flex-row flex-row-reverse py-3">
+                        <?php
+                        include_once "components/patients/new-patient.php";
+                        ?>
+                    </div>
+                    <?php
+                    $patients = new Patients();
+                    $patients->startTable();
+                    $sample_patients = array("Wilmarx John D. Cayabyab", "Ate Pole", "Israel Breta", "Glaiza Barugo");
+                    $sample_email = array("willy.whoop@sysgo.com", "ate.pole@sysgo.com", "israel.breta@sysgo.com", "glaiza.barugo@sysgo.com");
+                    $sample_user_images = array("administrator_male_32px.png", "ada_lovelace_32px.png", "andy_warhol_32px.png", "blond_long_hair_business_lady_32px.png");
+                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                        $name_key = array_rand($sample_branch_name);
+                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                    }
+                    $patients->patientsTable(1, "Wilmarx John D. Cayabyab", "willywhoop@sysgo.com", "administrator_male_32px.png", "August 16, 2023", "DMS-Manila", "Dr. Willy", "August 16, 2023");
+                    $patients->endTable();
+                    ?>
                 </div>
                 <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab"
                     tabindex="0">
