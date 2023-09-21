@@ -1,8 +1,8 @@
 <?php
 // require_onces
-require_once "components/modals/modal-archive-clinic.php";
-require_once "components/modals/modal-edit-clinic.php";
-require_once "components/modals/modal-view-clinic.php";
+require_once "modals/modal-archive-clinic.php";
+require_once "modals/modal-edit-clinic.php";
+require_once "modals/modal-view-clinic.php";
 class ClinicCard
 {
     function __construct()

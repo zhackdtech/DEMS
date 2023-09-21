@@ -42,4 +42,4 @@
     </div>
 </div>
 <!-- archive clinic details modal end -->
-<script src="./components/default/components/modals/modal-archive-clinic.js"></script>
+<script src="./components/default/modals/modal-archive-clinic.js"></script>
