@@ -68,6 +68,11 @@ require_once "components/default/clinic-cards.php";
                             </ol>
                         </nav>
                     </div>
+                    <div class="d-flex flex-row flex-row-reverse py-3">
+                        <?php
+                        require_once "components/default/new-clinic.php";
+                        ?>
+                    </div>
                     <!-- end breadcrumbs -->
                     <div class="row">
                         <!-- Clinic cards -->
@@ -81,7 +86,7 @@ require_once "components/default/clinic-cards.php";
                         for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
                             // feed the data to the class->getClinic()
                             // get clinic accepts three arguments id, branch name, address
-                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i],"9638773839","123456789");
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
                         }
                         ?>
                         <!-- end clinic cards -->

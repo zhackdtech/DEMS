@@ -615,3 +615,25 @@ hr.sidenav-divider {
     line-height: normal;
     letter-spacing: -0.332px;
 }
+
+button.add-clinic {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+    font-family: "Open sans";
+    padding: 8px 12px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 0;
+    background: #17C1E8;
+    color: var(--white);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    transition: .3s all ease-in-out;
+}
+button.add-clinic:hover
+{
+    background-color: #0F809A;
+}
