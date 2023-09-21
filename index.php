@@ -104,6 +104,92 @@ require_once "components/default/clinic-cards.php";
                             </ol>
                         </nav>
                     </div>
+                    <div class="row p-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">PATIENTS</h5>
+                                <table class="patients-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="main" scope="col">PATIENT</th>
+                                            <th scope="col">LAST VISIT</th>
+                                            <th scope="col">BRANCH</th>
+                                            <th scope="col">DOCTOR</th>
+                                            <th scope="col">REG. DATE</th>
+                                            <th scope="col">ACTIONS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="main" scope="row">
+                                                <div class="d-flex px-2 py-1">
+                                                    <div>
+                                                        <img src="assets/img/patients/administrator_male_32px.png"
+                                                            class="avatar avatar-sm me-3" alt="user6">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">
+                                                            <a href="" class="patient-table-patient-name">Wilmarx
+                                                                John D. Cayabyab</a>
+                                                        </h6>
+                                                        <p
+                                                            class="text-xs text-secondary mb-0 patient-table-patient-sub">
+                                                            willywhoop@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>August 16, 2023</td>
+                                            <td>DMS Manila</td>
+                                            <td>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">
+                                                        <a href="" class="patient-table-patient-doctor">
+                                                            Dr Willy</a>
+                                                    </h6>
+                                                    <!-- <p class="text-xs text-secondary mb-0 patient-table-patient-procedure">
+                                                        DENTAL BRACES</p> -->
+                                                </div>
+                                            </td>
+                                            <td>August 16, 2023</td>
+                                            <td> icon? </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="main" scope="row">
+                                                <div class="d-flex px-2 py-1">
+                                                    <div>
+                                                        <img src="assets/img/patients/ada_lovelace_32px.png"
+                                                            class="avatar avatar-sm me-3" alt="user6">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">
+                                                            <a href="" class="patient-table-patient-name">At E. Pole</a>
+                                                        </h6>
+                                                        <p
+                                                            class="text-xs text-secondary mb-0 patient-table-patient-sub">
+                                                            ate.pole@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>August 15, 2023</td>
+                                            <td>DMS Laguna</td>
+                                            <td>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">
+                                                        <a href="" class="patient-table-patient-doctor">
+                                                            Dr Willy</a>
+                                                    </h6>
+                                                    <!-- <p class="text-xs text-secondary mb-0 patient-table-patient-procedure">
+                                                        DENTAL BRACES</p> -->
+                                                </div>
+                                            </td>
+                                            <td>August 16, 2023</td>
+                                            <td> icon? </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                     <!-- end breadcrumbs -->
                 </div>
                 <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab"

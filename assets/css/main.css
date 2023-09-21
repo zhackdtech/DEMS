@@ -31,6 +31,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 #sidebar {
@@ -633,7 +634,149 @@ button.add-clinic {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
     transition: .3s all ease-in-out;
 }
-button.add-clinic:hover
-{
+
+button.add-clinic:hover {
     background-color: #0F809A;
+}
+
+.patients-table {
+    overflow: hidden;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.patients-table tr th.main {
+    text-align: left;
+}
+
+.patients-table thead tr {
+    color: #8392AB !important;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.387px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.patients-table td {
+    text-align: center;
+}
+
+.patients-table tr td {
+    color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.patients-table thead tr th {
+    color: var(--gray-gray-400, #A0AEC0);
+    font-family: "Open sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 15px */
+}
+
+.patients-table tr td.main {
+    color: #363636;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 19.6px */
+    /* 19.6px */
+    text-align: left;
+}
+
+.patients-table tr td {
+    color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 19.6px */
+    text-align: center;
+}
+
+.patients-table th,
+.patients-table td {
+    padding: 12px 15px;
+    color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.patients-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.patients-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.patients-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.patients-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.patient-table-patient-name {
+    color: #363636;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.patient-table-patient-sub {
+    color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.patient-table-patient-doctor {
+    color: #8392AB !important;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 19.6px */
+    text-align: center;
+}
+
+.patient-table-patient-procedure {
+    color: #8392AB;
+    font-family: "Open sans";
+    font-weight: 500;
+    opacity: .6;
 }
