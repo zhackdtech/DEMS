@@ -15,6 +15,9 @@ body {
 .bg-primary {
     background-color: #17C1E8 !important;
 }
+.bg-dark-blue {
+    background-color: #344767 !important;
+}
 
 a {
     text-decoration: none;
