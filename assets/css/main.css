@@ -15,8 +15,18 @@ body {
 .bg-primary {
     background-color: #17C1E8 !important;
 }
+
 .bg-dark-blue {
     background-color: #344767 !important;
+}
+
+.bg-brand-danger {
+
+    background-color: #E53E3E;
+}
+
+.color-brand-danger {
+    color: #E53E3E
 }
 
 a {
@@ -576,8 +586,32 @@ hr.sidenav-divider {
     letter-spacing: -0.443px;
     opacity: .6;
 }
-.clinic-status-dropdown:hover
-{
+
+.clinic-status-dropdown:hover {
     border-radius: 16px;
     background-color: #fff !important;
+}
+
+.clinic-archive-modal-header-icon {
+    font-size: 64px !important;
+}
+
+.archive-clinic-modal-header {
+    color: #344767;
+    font-family: "Open sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 33.6px */
+}
+
+.archive-clinic-modal-description {
+    color: #67748E;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.332px;
 }

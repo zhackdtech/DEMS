@@ -7,13 +7,26 @@
                 <h1 class="modal-title fs-5 clinic-modal-title" id="exampleModalLabel">Archive Clinic</h1>
             </div>
             <div class="modal-body clinic-modal-body">
-                ...
+                <div class="container pt-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-box-archive color-brand-danger clinic-archive-modal-header-icon"></i>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <h3 class="text-center archive-clinic-modal-header py-1">
+                        Archive clinic_name?
+                    </h3>
+                    <p class="archive-clinic-modal-description text-center ">
+                        The data of the clinics that are in archive mode won't be accessible, continue?
+                    </p>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="clinic-modal-button primary px-1" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="clinic-modal-button danger px-1">Save</button>
+                <button type="button" class="clinic-modal-button danger px-1">Archive</button>
             </div>
         </div>
     </div>
 </div>
 <!-- archive clinic details modal end -->
+<script src="./components/default/components/modals/modal-archive-clinic.js"></script>
