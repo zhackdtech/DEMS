@@ -649,12 +649,12 @@ button.add-clinic:hover {
     font-family: sans-serif;
     min-width: 100%;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.15);
+    padding:0px
 }
 
 .patients-table tr th.main {
     text-align: left;
 }
-
 .patients-table thead tr {
     color: #8392AB !important;
     font-family: "Open sans";
@@ -671,16 +671,6 @@ button.add-clinic:hover {
     text-align: center;
 }
 
-.patients-table tr td {
-    color: #8392AB;
-    font-family: "Open sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.387px;
-}
-
 .patients-table thead tr th {
     color: var(--gray-gray-400, #A0AEC0);
     font-family: "Open sans";
@@ -689,6 +679,7 @@ button.add-clinic:hover {
     font-weight: 700;
     line-height: 150%;
     /* 15px */
+    border-bottom: 1px solid rgba(243, 243, 243,.6);
 }
 
 .patients-table tr td.main {
@@ -725,9 +716,14 @@ button.add-clinic:hover {
     line-height: normal;
     letter-spacing: -0.387px;
 }
-.patients-table tr:hover
+.patients-table tr
 {
-    background-color: #F3F3F3;
+    background-color: #fff;
+}
+
+.patients-table tbody tr:hover
+{
+    background-color: #F8F9FA;
 }
 .patients-table tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -782,4 +778,25 @@ button.add-clinic:hover {
     font-family: "Open sans";
     font-weight: 500;
     opacity: .6;
+}
+button.add-patient {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+    font-family: "Open sans";
+    padding: 8px 12px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 0;
+    background: #17C1E8;
+    color: var(--white);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    transition: .3s all ease-in-out;
+}
+
+button.add-patient:hover {
+    background-color: #0F809A;
 }

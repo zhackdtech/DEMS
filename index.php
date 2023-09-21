@@ -1,6 +1,7 @@
 <?php
 require_once "components/default/clinic-cards.php";
-?>
+require_once "components/patients/patients.php"
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +95,6 @@ require_once "components/default/clinic-cards.php";
                 </div>
                 <div class="tab-pane fade show" id="patients-tab" role="patients-tab" aria-labelledby="patients-tab"
                     tabindex="0">
-                    <!-- bread crumbs -->
                     <div class="row p-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -104,96 +104,24 @@ require_once "components/default/clinic-cards.php";
                             </ol>
                         </nav>
                     </div>
-                    <div class="row p-3">
-                    <table class="patients-table">
-                                    <thead>
-                                        <tr>
-                                            <th class="main" scope="col">PATIENT</th>
-                                            <th scope="col">LAST VISIT</th>
-                                            <th scope="col">BRANCH</th>
-                                            <th scope="col">DOCTOR</th>
-                                            <th scope="col">REG. DATE</th>
-                                            <th scope="col">ACTIONS</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="main" scope="row">
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="assets/img/patients/administrator_male_32px.png"
-                                                            class="avatar avatar-sm me-3" alt="user6">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">
-                                                            <a href="" class="patient-table-patient-name">Wilmarx
-                                                                John D. Cayabyab</a>
-                                                        </h6>
-                                                        <p
-                                                            class="text-xs text-secondary mb-0 patient-table-patient-sub">
-                                                            willywhoop@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>August 16, 2023</td>
-                                            <td>DMS Manila</td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">
-                                                        <a href="" class="patient-table-patient-doctor">
-                                                            Dr. Willy</a>
-                                                    </h6>
-                                                    <!-- <p class="text-xs text-secondary mb-0 patient-table-patient-procedure">
-                                                        DENTAL BRACES</p> -->
-                                                </div>
-                                            </td>
-                                            <td>August 16, 2023</td>
-                                            <td>
-                                                <a href="#">
-                                                    <i class="fa-solid fa-pen-to-square"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="main" scope="row">
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="assets/img/patients/ada_lovelace_32px.png"
-                                                            class="avatar avatar-sm me-3" alt="user6">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">
-                                                            <a href="" class="patient-table-patient-name">At E. Pole</a>
-                                                        </h6>
-                                                        <p
-                                                            class="text-xs text-secondary mb-0 patient-table-patient-sub">
-                                                            ate.pole@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>August 15, 2023</td>
-                                            <td>DMS Laguna</td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">
-                                                        <a href="" class="patient-table-patient-doctor">
-                                                            Dr. Willy</a>
-                                                    </h6>
-                                                    <!-- <p class="text-xs text-secondary mb-0 patient-table-patient-procedure">
-                                                        DENTAL BRACES</p> -->
-                                                </div>
-                                            </td>
-                                            <td>August 16, 2023</td>
-                                            <td>
-                                                <a href="#">
-                                                    <i class="fa-solid fa-pen-to-square"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <div class="d-flex flex-row flex-row-reverse py-3">
+                        <?php
+                        include_once "components/patients/new-patient.php";
+                        ?>
                     </div>
-                    <!-- end breadcrumbs -->
+                    <?php
+                    $patients = new Patients();
+                    $patients->startTable();
+                    $sample_patients = array("Wilmarx John D. Cayabyab", "Ate Pole", "Israel Breta", "Glaiza Barugo");
+                    $sample_email = array("willy.whoop@sysgo.com", "ate.pole@sysgo.com", "israel.breta@sysgo.com", "glaiza.barugo@sysgo.com");
+                    $sample_user_images = array("administrator_male_32px.png", "ada_lovelace_32px.png", "andy_warhol_32px.png", "blond_long_hair_business_lady_32px.png");
+                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                        $name_key = array_rand($sample_branch_name);
+                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                    }
+                    $patients->patientsTable(1, "Wilmarx John D. Cayabyab", "willywhoop@sysgo.com", "administrator_male_32px.png", "August 16, 2023", "DMS-Manila", "Dr. Willy", "August 16, 2023");
+                    $patients->endTable();
+                    ?>
                 </div>
                 <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab"
                     tabindex="0">
