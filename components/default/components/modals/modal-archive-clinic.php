@@ -20,6 +20,19 @@
                         The data of the clinics that are in archive mode won't be accessible, continue?
                     </p>
                 </div>
+                <div class="row p-2">
+                    <div class="mb-3">
+                        <label for="password_input" class="form-label">Enter your password to continue:</label>
+                        <div class="input-group">
+                            <span class="input-group-text border-right-0 bg-brand-danger text-white" id="password_input">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="text" class="form-control border-left-0" id="password_input"
+                                aria-describedby="password_input">
+                        </div>
+                        <div class="form-text" id="password_input">For security and confirmation purposes</div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="clinic-modal-button primary px-1" data-bs-dismiss="modal">Close</button>
