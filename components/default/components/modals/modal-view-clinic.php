@@ -17,7 +17,7 @@
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
                                     id="clinic_address" style="color:var(--color-dark)"
-                                    aria-describedby="clinic_address" disabled>
+                                    aria-describedby="clinic_address" readonly>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                                     <i class="fa-solid fa-id-card"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
-                                    id="clinic_name" style="color:var(--color-dark)" aria-describedby="clinic_name" disabled>
+                                    id="clinic_name" style="color:var(--color-dark)" aria-describedby="clinic_name" readonly>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                                     <i class="fa-solid fa-mobile"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
-                                    id="branch_mobile" style="color:var(--color-dark)" aria-describedby="branch_mobile" disabled>
+                                    id="branch_mobile" style="color:var(--color-dark)" aria-describedby="branch_mobile" readonly>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
                                     id="branch_telehone" style="color:var(--color-dark)"
-                                    aria-describedby="branch_telehone" disabled>
+                                    aria-describedby="branch_telehone" readonly>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                 <div class="row p-2 px-3">
                     <div class="col-12 p-1">
                         <div class="input-group mb-3">
-                            <input type="text" class="clinic-modal-input form-control" id="clinic_state" disabled>
+                            <input type="text" class="clinic-modal-input form-control" id="clinic_state" readonly>
                             <button class="btn bg-dark-blue dropdown-toggle text-light" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false"  disabled>
                                 <i class="fa-solid fa-power-off"></i>
