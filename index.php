@@ -105,10 +105,7 @@ require_once "components/default/clinic-cards.php";
                         </nav>
                     </div>
                     <div class="row p-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">PATIENTS</h5>
-                                <table class="patients-table">
+                    <table class="patients-table">
                                     <thead>
                                         <tr>
                                             <th class="main" scope="col">PATIENT</th>
@@ -144,14 +141,18 @@ require_once "components/default/clinic-cards.php";
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm">
                                                         <a href="" class="patient-table-patient-doctor">
-                                                            Dr Willy</a>
+                                                            Dr. Willy</a>
                                                     </h6>
                                                     <!-- <p class="text-xs text-secondary mb-0 patient-table-patient-procedure">
                                                         DENTAL BRACES</p> -->
                                                 </div>
                                             </td>
                                             <td>August 16, 2023</td>
-                                            <td> icon? </td>
+                                            <td>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="main" scope="row">
@@ -176,19 +177,21 @@ require_once "components/default/clinic-cards.php";
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm">
                                                         <a href="" class="patient-table-patient-doctor">
-                                                            Dr Willy</a>
+                                                            Dr. Willy</a>
                                                     </h6>
                                                     <!-- <p class="text-xs text-secondary mb-0 patient-table-patient-procedure">
                                                         DENTAL BRACES</p> -->
                                                 </div>
                                             </td>
                                             <td>August 16, 2023</td>
-                                            <td> icon? </td>
+                                            <td>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
                     </div>
                     <!-- end breadcrumbs -->
                 </div>

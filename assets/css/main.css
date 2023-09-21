@@ -648,7 +648,7 @@ button.add-clinic:hover {
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 100%;
-    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .patients-table tr th.main {
@@ -663,7 +663,7 @@ button.add-clinic:hover {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.387px;
-    color: #ffffff;
+    color: #000;
     text-align: center;
 }
 
@@ -725,17 +725,20 @@ button.add-clinic:hover {
     line-height: normal;
     letter-spacing: -0.387px;
 }
-
+.patients-table tr:hover
+{
+    background-color: #F3F3F3;
+}
 .patients-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
-
+/* 
 .patients-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
-}
+} */
 
 .patients-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #2D3748;
 }
 
 .patients-table tbody tr.active-row {
