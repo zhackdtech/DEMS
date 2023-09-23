@@ -29,6 +29,10 @@ body {
     color: #E53E3E
 }
 
+.color-brand-darkblue {
+    color: #344767 !important;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -649,12 +653,13 @@ button.add-clinic:hover {
     font-family: sans-serif;
     min-width: 100%;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.15);
-    padding:0px
+    padding: 0px
 }
 
 .patients-table tr th.main {
     text-align: left;
 }
+
 .patients-table thead tr {
     color: #8392AB !important;
     font-family: "Open sans";
@@ -679,7 +684,7 @@ button.add-clinic:hover {
     font-weight: 700;
     line-height: 150%;
     /* 15px */
-    border-bottom: 1px solid rgba(243, 243, 243,.6);
+    border-bottom: 1px solid rgba(243, 243, 243, .6);
 }
 
 .patients-table tr td.main {
@@ -716,18 +721,19 @@ button.add-clinic:hover {
     line-height: normal;
     letter-spacing: -0.387px;
 }
-.patients-table tr
-{
+
+.patients-table tr {
     background-color: #fff;
 }
 
-.patients-table tbody tr:hover
-{
+.patients-table tbody tr:hover {
     background-color: #F8F9FA;
 }
+
 .patients-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
+
 /* 
 .patients-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
@@ -779,6 +785,7 @@ button.add-clinic:hover {
     font-weight: 500;
     opacity: .6;
 }
+
 button.add-patient {
     font-size: 14px;
     font-style: normal;
@@ -799,4 +806,39 @@ button.add-patient {
 
 button.add-patient:hover {
     background-color: #0F809A;
+}
+
+input.new-patient-modal-date {
+    color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+input[type="date"].new-patient-modal-date::-webkit-inner-spin-button,
+input[type="date"].new-patient-modal-date::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.new-patient-modal-label
+{color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.387px;
 }
