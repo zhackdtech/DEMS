@@ -12,7 +12,8 @@
                         <div class="mb-3">
                             <label for="clinic_address" class="form-label">Branch Address</label>
                             <div class="input-group">
-                                <span class="input-group-text border-right-0 bg-dark-blue text-white" id="clinic_address">
+                                <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                    id="clinic_address">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
@@ -29,7 +30,8 @@
                                     <i class="fa-solid fa-id-card"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
-                                    id="clinic_name" style="color:var(--color-dark)" aria-describedby="clinic_name" readonly>
+                                    id="clinic_name" style="color:var(--color-dark)" aria-describedby="clinic_name"
+                                    readonly>
                             </div>
                         </div>
                     </div>
@@ -39,11 +41,13 @@
                         <div class="mb-3">
                             <label for="branch_mobile" class="form-label">Branch Mobile</label>
                             <div class="input-group">
-                                <span class="input-group-text border-right-0 bg-dark-blue text-white" id="branch_mobile">
+                                <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                    id="branch_mobile">
                                     <i class="fa-solid fa-mobile"></i>
                                 </span>
                                 <input type="text" class="clinic-modal-input form-control border-left-0"
-                                    id="branch_mobile" style="color:var(--color-dark)" aria-describedby="branch_mobile" readonly>
+                                    id="branch_mobile" style="color:var(--color-dark)" aria-describedby="branch_mobile"
+                                    readonly>
                             </div>
                         </div>
                     </div>
@@ -67,19 +71,19 @@
                         <div class="input-group mb-3">
                             <input type="text" class="clinic-modal-input form-control" id="clinic_state" readonly>
                             <button class="btn bg-dark-blue dropdown-toggle text-light" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false"  disabled>
+                                data-bs-toggle="dropdown" aria-expanded="false" disabled>
                                 <i class="fa-solid fa-power-off"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end animate slideIn p-1">
                                 <li>
                                     <a class="dropdown-item clinic-dropdown-item" href="#">
-                                    <i class="fa-solid fa-power-off text-success"></i>
-                                    &nbsp;Active</a>
+                                        <i class="fa-solid fa-power-off text-success"></i>
+                                        &nbsp;Active</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item clinic-dropdown-item" href="#">
-                                    <i class="fa-solid fa-power-off text-danger"></i>
-                                    &nbsp;Archived</a>
+                                        <i class="fa-solid fa-power-off text-danger"></i>
+                                        &nbsp;Archived</a>
                                 </li>
                             </ul>
                         </div>
@@ -95,4 +99,24 @@
     </div>
 </div>
 <!-- view clinic details modal end -->
-<script src="./components/default/modals/modal-view-clinic.js"></script>
+<script src="./components/default/modals/modal-view-clinic.js">
+
+</script>
+<script>
+    const view_details = document.getElementById('view_details_modals')
+    if (view_details) {
+        view_details.addEventListener('show.bs.modal', event => {
+            // Button that triggered the modal
+            const button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            const clinicName = button.getAttribute('data-bs-clinicname')
+            // If necessary, you could initiate an Ajax request here
+            // and then do the updating in a callback.
+
+            // Update the modal's content.
+            const modalTitle = view_details.querySelector('.modal-title')
+
+            modalTitle.textContent = `Viewing details of: ${clinicName}`
+        })
+    }
+</script>

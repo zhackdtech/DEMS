@@ -29,6 +29,10 @@ body {
     color: #E53E3E
 }
 
+.color-brand-darkblue {
+    color: #344767 !important;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -818,7 +822,23 @@ input[type="date"].new-patient-modal-date::-webkit-inner-spin-button,
 input[type="date"].new-patient-modal-date::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
-.new-patient-modal-select
-{
-    
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.new-patient-modal-label
+{color: #8392AB;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.387px;
 }
