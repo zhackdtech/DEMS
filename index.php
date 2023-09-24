@@ -49,7 +49,7 @@ require_once "components/patients/patients.php"
         require "components/structure/sidebar.php";
         ?>
         <!-- end sidebar -->
-        <div class="container">
+        <div class="container main-container">
             <!-- navbar -->
             <?php
             require "components/structure/navbar.php";
@@ -89,6 +89,41 @@ require_once "components/patients/patients.php"
                             // get clinic accepts three arguments id, branch name, address
                             $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
                         }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
+                        for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
+                            // feed the data to the class->getClinic()
+                            // get clinic accepts three arguments id, branch name, address
+                            $clinicCard->getClinic($i, $sample_branch_name[$i], $sample_addresses[$i], "9638773839", "123456789");
+                        }
                         ?>
                         <!-- end clinic cards -->
                     </div>
@@ -115,6 +150,18 @@ require_once "components/patients/patients.php"
                     $sample_patients = array("Wilmarx John D. Cayabyab", "Ate Pole", "Israel Breta", "Glaiza Barugo");
                     $sample_email = array("willy.whoop@sysgo.com", "ate.pole@sysgo.com", "israel.breta@sysgo.com", "glaiza.barugo@sysgo.com");
                     $sample_user_images = array("administrator_male_32px.png", "ada_lovelace_32px.png", "andy_warhol_32px.png", "blond_long_hair_business_lady_32px.png");
+                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                        $name_key = array_rand($sample_branch_name);
+                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                    }
+                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                        $name_key = array_rand($sample_branch_name);
+                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                    }
+                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                        $name_key = array_rand($sample_branch_name);
+                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                    }
                     for ($i = count($sample_patients) - 1; $i != 0; --$i) {
                         $name_key = array_rand($sample_branch_name);
                         $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
