@@ -17,6 +17,7 @@
 
 ::-webkit-scrollbar {
     width: 6px;
+    height:6px;
     background-color: #F5F5F5;
     opacity: .6;
 }
@@ -78,31 +79,6 @@ a {
 .main-content
 {
     margin-right:280px;
-}
-@media (min-width:1200px)
-{ 
-    .main-container
-    {
-        margin-left:280px;
-    }
-    #sidebar
-    {
-        height:100vh;
-    }
-}
-@media (max-width: 1200px) {
-    #sidebar {
-        background-color: var(--white) !important;
-        position:fixed;
-        margin-left: -280px !important;
-        z-index: 99;
-        box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
-        height:100vh
-    }
-
-    .nav-container {
-        grid-template-columns: 1fr 2fr;
-    }
 }
 
 .nav-item.nav-label {
@@ -639,25 +615,19 @@ button.add-clinic {
 
 button.add-clinic:hover {
     background-color: #0F809A;
+} 
+.patients-card
+{
+    overflow:scroll;
+    max-height: 60vh;
 }
-
-.patients-table {
-    overflow: hidden;
-    border-spacing: 0;
-    border-collapse: separate;
-    border: 1px solid transparent;
-    border-radius: 12px;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 100%;
-    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.15);
-    padding: 0px
-}
-
 .patients-table tr th.main {
     text-align: left;
 }
-
+.patients-table tr:nth-child(even)
+{
+    background-color: #FAFBFB;
+}
 .patients-table thead tr {
     color: #8392AB !important;
     font-family: "Open sans";
@@ -839,4 +809,31 @@ input[type=number] {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.387px;
+}
+
+@media (max-width: 1200px) {
+    #sidebar {
+        background-color: var(--white) !important;
+        position:fixed;
+        margin-left: -280px !important;
+        z-index: 99;
+        box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+        height:100vh
+    }
+
+    .nav-container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (min-width:1200px)
+{ 
+    .main-container
+    {
+        margin-left:280px;
+    }
+    #sidebar
+    {
+        height:100vh;
+    }
 }

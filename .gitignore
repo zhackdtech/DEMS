@@ -1,2 +1,3 @@
-includes/
+includes/config.php
+includes/Clinics.php
 .vscode/launch.json

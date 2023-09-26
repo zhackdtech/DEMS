@@ -5,7 +5,7 @@ class Patients
     {
         ?>
         <div class="row p-3">
-            <table class="patients-table">
+            <table class="table-responsive patients-table">
                 <thead>
                     <tr>
                         <th class="main" scope="col">PATIENT</th>

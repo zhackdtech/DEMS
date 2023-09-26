@@ -1,7 +1,9 @@
 <?php
 require_once "components/default/clinic-cards.php";
-require_once "components/patients/patients.php"
-    ?>
+require_once "components/patients/patients.php";
+require "includes/DateFnc.php";
+require "includes/config.php"
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -135,7 +137,12 @@ require_once "components/patients/patients.php"
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">Branch</li>
                                 <li class="breadcrumb-item">DEMS</li>
-                                <li class="breadcrumb-item active" aria-current="page">Patients</li>
+                                <li class="breadcrumb-item">Patients</li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <?php
+                                    echo dateToStdMY();
+                                    ?>
+                                </li>
                             </ol>
                         </nav>
                     </div>
@@ -144,31 +151,43 @@ require_once "components/patients/patients.php"
                         include_once "components/patients/new-patient.php";
                         ?>
                     </div>
-                    <?php
-                    $patients = new Patients();
-                    $patients->startTable();
-                    $sample_patients = array("Wilmarx John D. Cayabyab", "Ate Pole", "Israel Breta", "Glaiza Barugo");
-                    $sample_email = array("willy.whoop@sysgo.com", "ate.pole@sysgo.com", "israel.breta@sysgo.com", "glaiza.barugo@sysgo.com");
-                    $sample_user_images = array("administrator_male_32px.png", "ada_lovelace_32px.png", "andy_warhol_32px.png", "blond_long_hair_business_lady_32px.png");
-                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
-                        $name_key = array_rand($sample_branch_name);
-                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
-                    }
-                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
-                        $name_key = array_rand($sample_branch_name);
-                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
-                    }
-                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
-                        $name_key = array_rand($sample_branch_name);
-                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
-                    }
-                    for ($i = count($sample_patients) - 1; $i != 0; --$i) {
-                        $name_key = array_rand($sample_branch_name);
-                        $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
-                    }
-                    $patients->patientsTable(1, "Wilmarx John D. Cayabyab", "willywhoop@sysgo.com", "administrator_male_32px.png", "August 16, 2023", "DMS-Manila", "Dr. Willy", "August 16, 2023");
-                    $patients->endTable();
-                    ?>
+
+                    <div class="card">
+                        <div class="card-body patients-card">
+                            <h4 class="card-title">
+
+                                <?php
+                                echo getCurrMonthName();
+                                ?>
+                                 &nbsp;Patients
+                            </h4>
+                            <?php
+                            $patients = new Patients();
+                            $patients->startTable();
+                            $sample_patients = array("Wilmarx John D. Cayabyab", "Ate Pole", "Israel Breta", "Glaiza Barugo");
+                            $sample_email = array("willy.whoop@sysgo.com", "ate.pole@sysgo.com", "israel.breta@sysgo.com", "glaiza.barugo@sysgo.com");
+                            $sample_user_images = array("administrator_male_32px.png", "ada_lovelace_32px.png", "andy_warhol_32px.png", "blond_long_hair_business_lady_32px.png");
+                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                                $name_key = array_rand($sample_branch_name);
+                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                            }
+                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                                $name_key = array_rand($sample_branch_name);
+                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                            }
+                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                                $name_key = array_rand($sample_branch_name);
+                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                            }
+                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                                $name_key = array_rand($sample_branch_name);
+                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                            }
+                            $patients->patientsTable(1, "Wilmarx John D. Cayabyab", "willywhoop@sysgo.com", "administrator_male_32px.png", "August 16, 2023", "DMS-Manila", "Dr. Willy", "August 16, 2023");
+                            $patients->endTable();
+                            ?>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade show" id="schedule-tab" role="schedule-tab" aria-labelledby="schedule-tab"
                     tabindex="0">
@@ -324,7 +343,7 @@ require_once "components/patients/patients.php"
             if (activeTab) {
                 $('#sidetabs a[href="' + activeTab + '"]').tab('show');
             }
-        });
+    });
     </script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
