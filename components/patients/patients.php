@@ -5,7 +5,7 @@ class Patients
     {
         ?>
         <div class="row p-3">
-            <table class="patients-table">
+            <table class="table-responsive patients-table">
                 <thead>
                     <tr>
                         <th class="main" scope="col">PATIENT</th>
@@ -32,7 +32,7 @@ class Patients
                                 </div>
                                 <div class="d-flex flex-column justify-content-center">
                                     <h6 class="mb-0 text-sm">
-                                        <a href="" class="patient-table-patient-name">
+                                        <a href="./pages/patient-details.php" class="patient-table-patient-name">
                                             <!-- echo name here -->
                                             <?php echo $name ?>
                                         </a>

@@ -63,7 +63,7 @@
                         <h6 class="dropdown-header">Messages</h6>
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="dropdown-list-image me-3">
-                                <img class="rounded-circle" src="assets/img/users/administrator_male_500px.png" />
+                                <img class="rounded-circle" src="/DEMS/assets/img/users/administrator_male_500px.png" />
                                 <div class="bg-success status-indicator"></div>
                             </div>
                             <div class="fw-bold">
@@ -78,7 +78,7 @@
                         </a>
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="dropdown-list-image me-3">
-                                <img class="rounded-circle" src="assets/img/users/elvis_presley_500px.png" />
+                                <img class="rounded-circle" src="/DEMS/assets/img/users/elvis_presley_500px.png" />
                                 <div class="bg-danger status-indicator"></div>
                             </div>
                             <div class="fw-bold">
@@ -93,7 +93,7 @@
                         </a>
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="dropdown-list-image me-3">
-                                <img class="rounded-circle" src="assets/img/users/about_me_male_500px.png" />
+                                <img class="rounded-circle" src="/DEMS/assets/img/users/about_me_male_500px.png" />
                                 <div class="bg-warning status-indicator"></div>
                             </div>
                             <div class="fw-bold">
@@ -111,7 +111,7 @@
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="dropdown-list-image me-3">
                                 <img class="rounded-circle"
-                                    src="assets/img/users/business_man_in_blue_jacket_500px.png" />
+                                    src="/DEMS/assets/img/users/business_man_in_blue_jacket_500px.png" />
                                 <div class="status-indicator"></div>
                             </div>
                             <div class="fw-bold">
@@ -140,7 +140,7 @@
                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
                         <span class="d-none d-lg-inline me-2 text-gray-600 small">Wilmarx Cayabyab</span>
                         <img class="border rounded-circle img-profile img-fluid" style="max-height:20px; max-width:20px"
-                            src="assets/img/users/administrator_male_500px.png" />
+                            src="/DEMS/assets/img/users/administrator_male_500px.png" />
                     </a>
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in  animate slideIn"
                         style="background-color:#F8F9FA">
