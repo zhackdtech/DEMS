@@ -172,8 +172,43 @@ require "../includes/config.php"
                             </div>
                             <div class="col-lg-8">
                                 <div class="card mb-4">
-                                    <div class="card-body">
-
+                                    <div class="card-header border-0 bg-transparent">
+                                        <ul
+                                            class="patient-details-navtab py-3 nav nav-pills border-0 d-flex justify-content-around">
+                                            <li class="nav-item ms-1 py-2">
+                                                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#medical-history-tab">
+                                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                                    &nbsp;Medical History</a>
+                                            </li>
+                                            <li class="nav-item ms-1 py-2">
+                                                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#procedures-tab">
+                                                    <i class="fa-solid fa-teeth"></i>
+                                                    &nbsp;Procedures</a>
+                                            </li>
+                                            <li class="nav-item ms-1 py-2">
+                                                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#photos-tab">
+                                                    <i class="fa-solid fa-images"></i>
+                                                    &nbsp;Photos</a>
+                                            </li>
+                                            <li class="nav-item ms-1 py-2">
+                                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#chart-tab">
+                                                    <i class="fa-solid fa-chart-simple"></i>
+                                                    &nbsp;Chart</a>
+                                            </li>
+                                        </ul>
+                                        <hr class="horizontal-gray">
+                                    </div>
+                                    <div class="card-body p-5">
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="medical-history-tab" role="tabpanel"
+                                                aria-labelledby="medical-history-tab" tabindex="0">Medical History</div>
+                                            <div class="tab-pane fade" id="procedures-tab" role="tabpanel"
+                                                aria-labelledby="procedures-tab" tabindex="0">Procedures</div>
+                                            <div class="tab-pane fade" id="photos-tab" role="tabpanel"
+                                                aria-labelledby="photos-tab" tabindex="0">Photos</div>
+                                            <div class="tab-pane fade" id="chart-tab" role="tabpanel"
+                                                aria-labelledby="chart-tab" tabindex="0">Chart</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
