@@ -72,11 +72,11 @@ require "../includes/config.php"
                     </div>
                     <div class="container py-1">
                         <div class="d-flex flex-row-reverse py-3">
-                            <button class="add-patient ms-1 bg-brand-danger">
+                            <button class="my-btn-primary ms-1 bg-brand-danger">
                                 <i class="fa-solid fa-trash"></i>
                                 &nbsp;Delete
                             </button>
-                            <button class="add-patient ms-1">
+                            <button class="my-btn-primary ms-1">
                                 <i class="fa-solid fa-print"></i>
                                 &nbsp;Print
                             </button>
@@ -176,17 +176,20 @@ require "../includes/config.php"
                                         <ul
                                             class="patient-details-navtab py-3 nav nav-pills border-0 d-flex justify-content-around">
                                             <li class="nav-item ms-1 py-2">
-                                                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#medical-history-tab">
+                                                <a class="nav-link active" aria-current="page" href="#"
+                                                    data-bs-toggle="tab" data-bs-target="#medical-history-tab">
                                                     <i class="fa-solid fa-clock-rotate-left"></i>
                                                     &nbsp;Medical History</a>
                                             </li>
                                             <li class="nav-item ms-1 py-2">
-                                                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#procedures-tab">
+                                                <a class="nav-link" href="#" data-bs-toggle="tab"
+                                                    data-bs-target="#procedures-tab">
                                                     <i class="fa-solid fa-teeth"></i>
                                                     &nbsp;Procedures</a>
                                             </li>
                                             <li class="nav-item ms-1 py-2">
-                                                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#photos-tab">
+                                                <a class="nav-link" href="#" data-bs-toggle="tab"
+                                                    data-bs-target="#photos-tab">
                                                     <i class="fa-solid fa-images"></i>
                                                     &nbsp;Photos</a>
                                             </li>
@@ -198,10 +201,634 @@ require "../includes/config.php"
                                         </ul>
                                         <hr class="horizontal-gray">
                                     </div>
-                                    <div class="card-body p-5">
+                                    <div class="card-body px-5">
                                         <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="medical-history-tab" role="tabpanel"
-                                                aria-labelledby="medical-history-tab" tabindex="0">Medical History</div>
+                                            <div class="tab-pane fade show active" id="medical-history-tab"
+                                                role="tabpanel" aria-labelledby="medical-history-tab" tabindex="0">
+                                                <div class="d-flex flex-row-reverse py-1"><button class="add-patient">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                        &nbsp;Modify
+                                                    </button>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            1. IN GOOD
+                                                            HEALTH?<span class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        checked="" disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            2. UNDER MEDICATION TREATMENT?<span
+                                                                class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            3. HAD SERIOUS ILLNESS OR SURGICAL OPERATION?<span
+                                                                class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            4. HAS BEEN HOSPITALIZED?<span class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            5. TAKING ANY PRESCRIPTION/NON-PRESCRIPTION MEDICATION?<span
+                                                                class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            6. USING TOBACCO PRODUCTS?<span class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            7. USING ALCOHOL, COCAINE, OR OTHER DANGEROUS DRUGS?<span
+                                                                class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col col-sm-12 col-md-8 col-lg-8">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            8. ALLERGIES:
+                                                        </p>
+                                                    </div>
+                                                    <div class="col col-sm-12 col-md-4 col-lg-4">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="input-group">
+                                                                <span
+                                                                    class="input-group-text border-right-0 bg-dark-blue text-white">
+                                                                    <i class="fa-solid fa-hand"></i>
+                                                                </span>
+                                                                <input type="text"
+                                                                    class="clinic-modal-input form-control border-left-0"
+                                                                    id="" style="color:var(--color-dark)" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-12">
+                                                        <p class="col-form-label"
+                                                            style="font-size: 12px;font-weight:bold">
+                                                            9. FOR WOMEN:
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            9.1 PREGNANT?<span class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-6">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            9.2 NURSING OR BREASTFEEDING?<span
+                                                                class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="form-check text-success"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value="" name=""
+                                                                        style="border-color: var(--bs-success);"
+                                                                        disabled="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-1">YES</label>
+                                                                </div>
+                                                                <div class="form-check text-danger"
+                                                                    style="font-size: 12px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="" value=""
+                                                                        style="border-color: var(--bs-danger);" name=""
+                                                                        disabled="" checked="">
+                                                                    <label class="form-check-label"
+                                                                        for="formCheck-2">NO</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-12">
+                                                        <p class="col-form-label" style="font-size: 12px;">
+                                                            10. DO YOU HAVE ANY OF THE FOLLOWING?<span
+                                                                class="text-danger">*</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled=""
+                                                                    checked="">
+                                                                <label class="form-check-label text-break" for="">High
+                                                                    Blood Pressure</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Low
+                                                                    Blood</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Epilespy / Convulsions</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">AIDs
+                                                                    or HIV</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Sexually Transmitted
+                                                                    Disease</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Stomach troubles /
+                                                                    Ulcer</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">
+                                                                    Fainting Seizures</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">
+                                                                    Rapid Weight Loss</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Radiation Therapy
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Joint
+                                                                    Replacement / Implant
+                                                                    Heart Surgery
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Heart
+                                                                    Attack</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">
+                                                                    Thyroid Problem</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">
+                                                                    Heart Disease
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Heart
+                                                                    Murmur
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Hepatitis / Liver Disease
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Rheumatic Fever
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Hay
+                                                                    Fever / Allergies
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Respiratory Problems
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Hepatitis / Jaundice
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Tuberculosis
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Swollen Ankles
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Kidney
+                                                                    Disease
+
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Diabetes
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Chest
+                                                                    Pain
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">
+                                                                    Cancer / Tumors</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Anemia
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Angina
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Asthma
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled=""
+                                                                    checked="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Emphysema
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break"
+                                                                    for="">Bleeding Problems
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled="">
+                                                                <label class="form-check-label text-break" for="">Blood
+                                                                    Diseases
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="High Blood Pressure" disabled=""
+                                                                    checked="">
+                                                                <label class="form-check-label text-break" for="">Head
+                                                                    Injuries
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" name="" type="checkbox"
+                                                                    id="" value="Arthritis / Rheumatism" disabled="">
+                                                                <label class="form-check-label text-break">
+                                                                    Arthritis / Rheumatism</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="tab-pane fade" id="procedures-tab" role="tabpanel"
                                                 aria-labelledby="procedures-tab" tabindex="0">Procedures</div>
                                             <div class="tab-pane fade" id="photos-tab" role="tabpanel"
@@ -238,7 +865,7 @@ require "../includes/config.php"
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 

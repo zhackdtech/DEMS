@@ -54,7 +54,10 @@ body {
 .color-brand-darkblue {
     color: #344767 !important;
 }
-
+button.bg-brand-danger:hover
+{
+    background-color: #982929 !important;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -817,21 +820,20 @@ input[type=number] {
 
 
 .patient-details {
-    color: #67748E;
+    color: #252F40;
     font-family: "Open sans";
-    font-size: 14px;
+    font-size: 0.875rem !important;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
     letter-spacing: -0.387px;
 }
-
 .patient-details-value {
-    color: #252F40;
+    color: #67748E;
     font-family: "Open sans";
-    font-size: 14px;
+    font-size: 0.875rem !important;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: -0.387px;
 }
@@ -902,7 +904,7 @@ button.my-btn-secondary:hover, button.my-btn-secondary:active {
     color: rgb(32, 32, 32);
 }
 
-.patient-details-navtab .nav-item .nav-link.active {
+.patient-details-navtab .nav-item .nav-link.active,.patient-details-navtab .nav-item .nav-link:hover {
     background-color: #17C1E8 !important;
     color: var(--white) !important;
 }
@@ -921,7 +923,6 @@ button.my-btn-secondary:hover, button.my-btn-secondary:active {
     border-radius: 5px;
     transition: all .3s ease-in-out;
 }
-
 @media (max-width: 1200px) {
     #sidebar {
         background-color: var(--white) !important;
