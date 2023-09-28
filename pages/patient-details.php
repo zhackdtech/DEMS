@@ -70,13 +70,17 @@ require "../includes/config.php"
                             </ol>
                         </nav>
                     </div>
-                    <div class="container py-3">
-                        <!-- <div class="row py-3">
-                            <button class="add-patient">
-                                <i class="fa-solid fa-plus"></i>
-                                &nbsp;New patient
+                    <div class="container py-1">
+                        <div class="d-flex flex-row-reverse py-3">
+                            <button class="add-patient ms-1 bg-brand-danger">
+                                <i class="fa-solid fa-trash"></i>
+                                &nbsp;Delete
                             </button>
-                        </div> -->
+                            <button class="add-patient ms-1">
+                                <i class="fa-solid fa-print"></i>
+                                &nbsp;Print
+                            </button>
+                        </div>
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="card mb-4">
@@ -87,17 +91,22 @@ require "../includes/config.php"
                                         <p class="text-muted mb-1">Since Aug 23, 2023</p>
                                         <p class="text-muted mb-4">DMS - Manila</p>
                                         <div class="d-flex justify-content-center mb-2">
-                                            <button type="button" class="btn btn-primary">Consent form</button>
-                                            <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+                                            <button type="button" class="my-btn-primary border-0">Consent form</button>
+                                            <button type="button" class="my-btn-secondary ms-1">Message</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card mb-4 mb-lg-0  overflow-hidden">
-                                    <div class="card-header bg-transparent py-3 my-card-title border-0">
-                                        Featured
-                                    </div>
-                                    <div class="card-body p-3">
+                                    <div class="card-header bg-transparent px-3 border-0">
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <p class="my-card-title">Patient Details</p>
+                                            <a href="#" data-bs-toggle="tooltip" title="Edit details">
+                                                <i class="fa-solid fa-user-pen"></i>
+                                            </a>
+                                        </div>
                                         <hr class="horizontal-gray">
+                                    </div>
+                                    <div class="card-body p-1">
                                         <ul class="list-group list-group-flush rounded-3">
                                             <li
                                                 class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
