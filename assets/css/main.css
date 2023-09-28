@@ -17,7 +17,7 @@
 
 ::-webkit-scrollbar {
     width: 6px;
-    height:6px;
+    height: 6px;
     background-color: #F5F5F5;
     opacity: .6;
 }
@@ -28,6 +28,7 @@
     background-color: rgba(52, 71, 103, .6);
     opacity: .6;
 }
+
 body {
     background-color: #F8F9FA;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +44,7 @@ body {
 
 .bg-brand-danger {
 
-    background-color: #E53E3E;
+    background-color: #E53E3E !important;
 }
 
 .color-brand-danger {
@@ -60,7 +61,7 @@ a {
 }
 
 #sidebar {
-    position:fixed;
+    position: fixed;
     transition: all .3s;
     overflow-y: scroll;
     margin-left: 0;
@@ -76,9 +77,9 @@ a {
 #sidebar.mobile {
     margin-left: 0px !important;
 }
-.main-content
-{
-    margin-right:280px;
+
+.main-content {
+    margin-right: 280px;
 }
 
 .nav-item.nav-label {
@@ -615,19 +616,21 @@ button.add-clinic {
 
 button.add-clinic:hover {
     background-color: #0F809A;
-} 
-.patients-card
-{
-    overflow:scroll;
+}
+
+.patients-card {
+    overflow: scroll;
     max-height: 60vh;
 }
+
 .patients-table tr th.main {
     text-align: left;
 }
-.patients-table tr:nth-child(even)
-{
+
+.patients-table tr:nth-child(even) {
     background-color: #FAFBFB;
 }
+
 .patients-table thead tr {
     color: #8392AB !important;
     font-family: "Open sans";
@@ -652,7 +655,7 @@ button.add-clinic:hover {
     font-weight: 700;
     line-height: 150%;
     /* 15px */
-    border-bottom: 1px solid rgba(243, 243, 243, .6);
+    border-bottom: 1px solid rgba(243, 243, 243, .2);
 }
 
 .patients-table tr td.main {
@@ -708,7 +711,7 @@ button.add-clinic:hover {
 } */
 
 .patients-table tbody tr:last-of-type {
-    border-bottom: 2px solid #2D3748;
+    border-bottom: 2px solid #A0AEC0;
 }
 
 .patients-table tbody tr.active-row {
@@ -801,8 +804,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
-.new-patient-modal-label
-{color: #8392AB;
+
+.new-patient-modal-label {
+    color: #8392AB;
     font-family: "Open sans";
     font-size: 14px;
     font-style: normal;
@@ -814,11 +818,11 @@ input[type=number] {
 @media (max-width: 1200px) {
     #sidebar {
         background-color: var(--white) !important;
-        position:fixed;
+        position: fixed;
         margin-left: -280px !important;
         z-index: 99;
         box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
-        height:100vh
+        height: 100vh
     }
 
     .nav-container {
@@ -826,14 +830,97 @@ input[type=number] {
     }
 }
 
-@media (min-width:1200px)
-{ 
-    .main-container
-    {
-        margin-left:280px;
+@media (min-width:1200px) {
+    .main-container {
+        margin-left: 280px;
     }
-    #sidebar
-    {
-        height:100vh;
+
+    #sidebar {
+        height: 100vh;
     }
+}
+
+.patient-details {
+    color: #67748E;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.patient-details-value {
+    color: #252F40;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+.my-card-title {
+    color: #252F40;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+
+hr.horizontal-gray {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    padding: 0;
+    margin: 0;
+}
+
+button.my-btn-primary {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+    font-family: "Open sans";
+    padding: 8px 12px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 0;
+    background: #17C1E8;
+    color: var(--white);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    transition: .3s all ease-in-out;
+}
+
+button.my-btn-primary:hover {
+    background-color: #0F809A;
+}
+
+button.my-btn-secondary {
+    color: #67748E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+    font-family: "Open sans";
+    padding: 8px 12px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border:0;
+    background: #fff;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    transition: .3s all ease-in-out;
+}
+button.my-btn-secondary:hover,button.my-btn-secondary:active {
+    background: #F3F3F3;
+    color: rgb(32,32,32);
 }

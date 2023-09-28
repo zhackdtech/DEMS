@@ -1,7 +1,7 @@
 <?php
 require "../includes/DateFnc.php";
 require "../includes/config.php"
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +56,131 @@ require "../includes/config.php"
             ?>
             <!-- end navbar -->
             <!-- main content -->
-            
+            <div class="container">
+                <section>
+                    <div class="row p-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Branch</li>
+                                <li class="breadcrumb-item">DEMS</li>
+                                <li class="breadcrumb-item">Patients</li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Wilmarx John Cayabyab
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="container py-1">
+                        <div class="d-flex flex-row-reverse py-3">
+                            <button class="add-patient ms-1 bg-brand-danger">
+                                <i class="fa-solid fa-trash"></i>
+                                &nbsp;Delete
+                            </button>
+                            <button class="add-patient ms-1">
+                                <i class="fa-solid fa-print"></i>
+                                &nbsp;Print
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <div class="card-body text-center">
+                                        <img src="../assets/img/users/administrator_male_500px.png" alt="avatar"
+                                            class="rounded-circle img-fluid" style="width: 150px;">
+                                        <h5 class="my-3">Wilmarx John D. Cayabyab</h5>
+                                        <p class="text-muted mb-1">Since Aug 23, 2023</p>
+                                        <p class="text-muted mb-4">DMS - Manila</p>
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <button type="button" class="my-btn-primary border-0">Consent form</button>
+                                            <button type="button" class="my-btn-secondary ms-1">Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 mb-lg-0  overflow-hidden">
+                                    <div class="card-header bg-transparent px-3 border-0">
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <p class="my-card-title">Patient Details</p>
+                                            <a href="#" data-bs-toggle="tooltip" title="Edit details">
+                                                <i class="fa-solid fa-user-pen"></i>
+                                            </a>
+                                        </div>
+                                        <hr class="horizontal-gray">
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <ul class="list-group list-group-flush rounded-3">
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Name: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;Wilmarx John D. Cayabyab</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Birthday: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;Sept 28, 2001</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Age: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;22 y.o</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Contact: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;+639638773839</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Email: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;wilmarx.cayabyab@gmail.com
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Address: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;Block 1 lot 8, Terelay
+                                                    Cabuyao Laguna</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Occupation: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;Chief Technological Officer
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Religion: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;N/A</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Guardian: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;-</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Referred: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;Ismaelita Babes</p>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-start align-items-center p-3">
+                                                <span class="patient-details">Created at: </span>
+                                                <p class="mb-0 patient-details-value">&nbsp;Aug 23, 2023</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <!-- end main content -->
             <!-- footer -->
             <div class="container">
@@ -73,13 +197,13 @@ require "../includes/config.php"
     <!-- modals end -->
     <!--  javascripts -->
     <script>
-        
+
     </script>
     <script src="../assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
