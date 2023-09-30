@@ -3,7 +3,7 @@ require_once "components/default/clinic-cards.php";
 require_once "components/patients/patients.php";
 require "includes/DateFnc.php";
 require "includes/config.php"
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -159,7 +159,7 @@ require "includes/config.php"
                                 <?php
                                 echo getCurrMonthName();
                                 ?>
-                                 &nbsp;Patients
+                                &nbsp;Patients
                             </h4>
                             <?php
                             $patients = new Patients();
@@ -167,25 +167,27 @@ require "includes/config.php"
                             $sample_patients = array("Wilmarx John D. Cayabyab", "Ate Pole", "Israel Breta", "Glaiza Barugo");
                             $sample_email = array("willy.whoop@sysgo.com", "ate.pole@sysgo.com", "israel.breta@sysgo.com", "glaiza.barugo@sysgo.com");
                             $sample_user_images = array("administrator_male_32px.png", "ada_lovelace_32px.png", "andy_warhol_32px.png", "blond_long_hair_business_lady_32px.png");
-                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                            for ($i = count($sample_patients); $i != 0; $i--) {
                                 $name_key = array_rand($sample_branch_name);
-                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                                $patients->patientsTable($i, $sample_patients[$i - 1], $sample_email[$i - 1], $sample_user_images[$i - 1], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
                             }
-                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                            for ($i = count($sample_patients); $i != 0; $i--) {
                                 $name_key = array_rand($sample_branch_name);
-                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                                $patients->patientsTable($i, $sample_patients[$i - 1], $sample_email[$i - 1], $sample_user_images[$i - 1], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
                             }
-                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
+                            for ($i = count($sample_patients); $i != 0; $i--) {
                                 $name_key = array_rand($sample_branch_name);
-                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
+                                $patients->patientsTable($i, $sample_patients[$i - 1], $sample_email[$i - 1], $sample_user_images[$i - 1], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
                             }
-                            for ($i = count($sample_patients) - 1; $i != 0; --$i) {
-                                $name_key = array_rand($sample_branch_name);
-                                $patients->patientsTable($i, $sample_patients[$i], $sample_email[$i], $sample_user_images[$i], "August 16, 2023", $sample_branch_name[$name_key], "Dr. Willy", "August 16, 2023");
-                            }
-                            $patients->patientsTable(1, "Wilmarx John D. Cayabyab", "willywhoop@sysgo.com", "administrator_male_32px.png", "August 16, 2023", "DMS-Manila", "Dr. Willy", "August 16, 2023");
                             $patients->endTable();
                             ?>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <div class="d-flex flex-row-reverse px-3 pb-3">
+                                <button class="my-btn-primary">
+                                    View all
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -333,7 +335,7 @@ require "includes/config.php"
     <!-- modals end -->
     <!--  javascripts -->
     <script>
-        
+
     </script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
