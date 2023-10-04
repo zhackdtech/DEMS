@@ -1175,7 +1175,9 @@ require "../includes/config.php"
                                         <div class="card-footer bg-transparent border-0">
                                             <div class="row py-3">
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="#">View all</a>
+                                                    <button class="my-btn-primary">
+                                                        View all
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
