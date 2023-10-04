@@ -967,6 +967,7 @@ hr.horizontal-gray {
     line-height: normal;
     letter-spacing: -0.387px;
 }
+
 @media (max-width: 1200px) {
     #sidebar {
         background-color: var(--white) !important;
