@@ -54,10 +54,11 @@ body {
 .color-brand-darkblue {
     color: #344767 !important;
 }
-button.bg-brand-danger:hover
-{
+
+button.bg-brand-danger:hover {
     background-color: #982929 !important;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -700,7 +701,7 @@ button.add-clinic:hover {
 }
 
 .patients-table tbody tr {
-    border-bottom: 1px solid rgba(221, 221, 221,0.4);
+    border-bottom: 1px solid rgba(221, 221, 221, 0.4);
 }
 
 /* 
@@ -708,9 +709,6 @@ button.add-clinic:hover {
     background-color: #f3f3f3;
 } */
 
-.patients-table tbody tr:last-of-type {
-    /* border-bottom: 2px solid #A0AEC0; */
-}
 
 .patients-table tbody tr.active-row {
     font-weight: bold;
@@ -823,6 +821,7 @@ input[type=number] {
     line-height: normal;
     letter-spacing: -0.387px;
 }
+
 .patient-details-value {
     color: #67748E;
     font-family: "Open sans";
@@ -899,7 +898,7 @@ hr.horizontal-gray {
     color: rgb(32, 32, 32);
 }
 
-.patient-details-navtab .nav-item .nav-link.active,.patient-details-navtab .nav-item .nav-link:hover {
+.patient-details-navtab .nav-item .nav-link.active, .patient-details-navtab .nav-item .nav-link:hover {
     background-color: #17C1E8 !important;
     color: var(--white) !important;
 }
@@ -917,6 +916,56 @@ hr.horizontal-gray {
     text-align: center;
     border-radius: 5px;
     transition: all .3s ease-in-out;
+}
+
+.patient-gallery-sub {
+    color: #67748E !important;
+    font-family: "Open sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.patient-gallery-title {
+    color: #252F40 !important;
+    font-family: "Open sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+.patient-gallery-desc
+{
+    color: #67748E !important;
+    font-family: "Open sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+.album-title
+{
+    color: #252F40 !important;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
+.album-sub
+{
+    color: #67748E !important;
+    font-family: "Open sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.387px;
 }
 @media (max-width: 1200px) {
     #sidebar {
