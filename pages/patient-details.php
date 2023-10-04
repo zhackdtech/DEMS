@@ -1022,7 +1022,7 @@ require "../includes/config.php"
 
                                             <div class="tab-pane fade" id="photos-tab" role="tabpanel"
                                                 aria-labelledby="photos-tab" tabindex="0">
-                                                <section class="">
+                                                <!-- <section class="">
                                                     <div class="row">
                                                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                                                             <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
@@ -1063,128 +1063,170 @@ require "../includes/config.php"
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </section>
+                                                </section> -->
+                                                <div class="row py-3">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                            <div class="card card-blog card-plain border-0">
+                                                                <div class="position-relative">
+                                                                    <a class="d-block shadow-xl border-radius-xl">
+                                                                        <img src="../assets/img/patients-gallery/dental_braces_500px.png"
+                                                                            alt="img-blur-shadow"
+                                                                            class="img-fluid shadow rounded-3">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="card-body px-3 pb-0 bg-transparent">
+                                                                    <p
+                                                                        class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
+                                                                        Dental Braces
+                                                                    </p>
+                                                                    <a href="javascript:;">
+                                                                        <h5 class="patient-gallery-title">
+                                                                            Braces
+                                                                        </h5>
+                                                                    </a>
+                                                                    <p class="mb-4 text-sm patient-gallery-desc">
+                                                                        Dental braces straighten your teeth and correct
+                                                                        a wide range
+                                                                        of orthodontic issues.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                            <div class="card card-blog card-plain border-0">
+                                                                <div class="position-relative">
+                                                                    <a class="d-block shadow-xl border-radius-xl">
+                                                                        <img src="../assets/img/patients-gallery/dental_braces_500px.png"
+                                                                            alt="img-blur-shadow"
+                                                                            class="img-fluid shadow rounded-3">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="card-body px-3 pb-0 bg-transparent">
+                                                                    <p
+                                                                        class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
+                                                                        Dental Braces
+                                                                    </p>
+                                                                    <a href="javascript:;">
+                                                                        <h5 class="patient-gallery-title">
+                                                                            Braces
+                                                                        </h5>
+                                                                    </a>
+                                                                    <p class="mb-4 text-sm patient-gallery-desc">
+                                                                        Dental braces straighten your teeth and correct
+                                                                        a wide range
+                                                                        of orthodontic issues.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                            <div class="card card-blog card-plain border-0">
+                                                                <div class="position-relative">
+                                                                    <a class="d-block shadow-xl border-radius-xl">
+                                                                        <img src="../assets/img/patients-gallery/dental_braces_500px.png"
+                                                                            alt="img-blur-shadow"
+                                                                            class="img-fluid shadow rounded-3">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="card-body px-3 pb-0 bg-transparent">
+                                                                    <p
+                                                                        class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
+                                                                        Dental Braces
+                                                                    </p>
+                                                                    <a href="javascript:;">
+                                                                        <h5 class="patient-gallery-title">
+                                                                            Braces
+                                                                        </h5>
+                                                                    </a>
+                                                                    <p class="mb-4 text-sm patient-gallery-desc">
+                                                                        Dental braces straighten your teeth and correct
+                                                                        a wide range
+                                                                        of orthodontic issues.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                            <div class="card card-blog card-plain border-0">
+                                                                <div class="position-relative">
+                                                                    <a class="d-block shadow-xl border-radius-xl">
+                                                                        <img src="../assets/img/patients-gallery/dental_braces_500px.png"
+                                                                            alt="img-blur-shadow"
+                                                                            class="img-fluid shadow rounded-3">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="card-body px-3 pb-0 bg-transparent">
+                                                                    <p
+                                                                        class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
+                                                                        Dental Braces
+                                                                    </p>
+                                                                    <a href="javascript:;">
+                                                                        <h5 class="patient-gallery-title">
+                                                                            Braces
+                                                                        </h5>
+                                                                    </a>
+                                                                    <p class="mb-4 text-sm patient-gallery-desc">
+                                                                        Dental braces straighten your teeth and correct
+                                                                        a wide range
+                                                                        of orthodontic issues.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                            <div class="card card-blog card-plain border-0">
+                                                                <div class="position-relative">
+                                                                    <a class="d-block shadow-xl border-radius-xl">
+                                                                        <img src="../assets/img/patients-gallery/dental_braces_500px.png"
+                                                                            alt="img-blur-shadow"
+                                                                            class="img-fluid shadow rounded-3">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="card-body px-3 pb-0 bg-transparent">
+                                                                    <p
+                                                                        class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
+                                                                        Dental Braces
+                                                                    </p>
+                                                                    <a href="javascript:;">
+                                                                        <h5 class="patient-gallery-title">
+                                                                            Braces
+                                                                        </h5>
+                                                                    </a>
+                                                                    <p class="mb-4 text-sm patient-gallery-desc">
+                                                                        Dental braces straighten your teeth and correct
+                                                                        a wide range
+                                                                        of orthodontic issues.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                            <div class="card h-100 card-plain border">
+                                                                <div
+                                                                    class="card-body d-flex flex-column justify-content-center text-center">
+                                                                    <a href="javascript:;">
+                                                                        <i class="fa fa-plus text-secondary mb-3"
+                                                                            aria-hidden="true"></i>
+                                                                        <h5 class=" text-secondary"> New photo </h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="chart-tab" role="tabpanel"
-                                                aria-labelledby="chart-tab" tabindex="0">Chart</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row py-3">
-                            <div class="col-12 mt-4">
-                                <div class="card mb-4">
-                                    <div class="card-header pb-0 p-3 bg-transparent border-0">
-                                        <h6 class="mb-1 album-title">Album</h6>
-                                        <p class="text-sm album-sub">Patient albums</p>
-                                    </div>
-                                    <div class="card-body p-3">
-                                        <div class="row">
-                                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
-                                                <div class="card card-blog card-plain border-0">
-                                                    <div class="position-relative">
-                                                        <a class="d-block shadow-xl border-radius-xl">
-                                                            <img src="../assets/img/patients-gallery/dental_braces_500px.png"
-                                                                alt="img-blur-shadow"
-                                                                class="img-fluid shadow rounded-3">
-                                                        </a>
-                                                    </div>
-                                                    <div class="card-body px-3 pb-0 bg-transparent">
-                                                        <p
-                                                            class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
-                                                            Dental Braces
-                                                        </p>
-                                                        <a href="javascript:;">
-                                                            <h5 class="patient-gallery-title">
-                                                                Braces
-                                                            </h5>
-                                                        </a>
-                                                        <p class="mb-4 text-sm patient-gallery-desc">
-                                                            Dental braces straighten your teeth and correct a wide range
-                                                            of orthodontic issues.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
-                                                <div class="card card-blog card-plain border-0">
-                                                    <div class="position-relative">
-                                                        <a class="d-block shadow-xl border-radius-xl">
-                                                            <img src="../assets/img/patients-gallery/dental_braces_500px.png"
-                                                                alt="img-blur-shadow"
-                                                                class="img-fluid shadow rounded-3">
-                                                        </a>
-                                                    </div>
-                                                    <div class="card-body px-3 pb-0 bg-transparent">
-                                                        <p
-                                                            class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
-                                                            Dental Braces
-                                                        </p>
-                                                        <a href="javascript:;">
-                                                            <h5 class="patient-gallery-title">
-                                                                Braces
-                                                            </h5>
-                                                        </a>
-                                                        <p class="mb-4 text-sm patient-gallery-desc">
-                                                            Dental braces straighten your teeth and correct a wide range
-                                                            of orthodontic issues.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
-                                                <div class="card card-blog card-plain border-0">
-                                                    <div class="position-relative">
-                                                        <a class="d-block shadow-xl border-radius-xl">
-                                                            <img src="../assets/img/patients-gallery/dental_braces_500px.png"
-                                                                alt="img-blur-shadow"
-                                                                class="img-fluid shadow rounded-3">
-                                                        </a>
-                                                    </div>
-                                                    <div class="card-body px-3 pb-0 bg-transparent">
-                                                        <p
-                                                            class="text-gradient text-dark mb-2 text-sm patient-gallery-sub">
-                                                            Dental Braces
-                                                        </p>
-                                                        <a href="javascript:;">
-                                                            <h5 class="patient-gallery-title">
-                                                                Braces
-                                                            </h5>
-                                                        </a>
-                                                        <p class="mb-4 text-sm patient-gallery-desc">
-                                                            Dental braces straighten your teeth and correct a wide range
-                                                            of orthodontic issues.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
-                                                <div class="card h-100 card-plain border">
-                                                    <div
-                                                        class="card-body d-flex flex-column justify-content-center text-center">
-                                                        <a href="javascript:;">
-                                                            <i class="fa fa-plus text-secondary mb-3"
-                                                                aria-hidden="true"></i>
-                                                            <h5 class=" text-secondary"> New photo </h5>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer bg-transparent border-0">
-                                            <div class="row py-3">
-                                                <div class="d-flex justify-content-center">
-                                                    <button class="my-btn-primary">
-                                                        View all
-                                                    </button>
-                                                </div>
+                                                aria-labelledby="chart-tab" tabindex="0">
+                                                <!-- chart goes here -->
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
             </div>
@@ -1203,9 +1245,8 @@ require "../includes/config.php"
 
     <!-- modals end -->
     <!--  javascripts -->
-    <script>
 
-    </script>
+
     <script src="../assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
