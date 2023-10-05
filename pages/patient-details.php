@@ -41,7 +41,37 @@ require "../includes/config.php"
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
+<style>
+        /* Customize your styles here */
+        .tooth {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+        }
 
+        .selected-healthy {
+            background-color: #66ff66;
+        }
+
+        .selected-decayed {
+            background-color: #ff6666;
+        }
+
+        .selected-missing {
+            background-color: #cccccc;
+        }
+
+        /* Additional CSS for responsiveness */
+        @media (max-width: 768px) {
+            .tooth {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
 <body>
     <main class="d-flex flex-nowrap">
         <!-- sidebar -->
@@ -1066,7 +1096,8 @@ require "../includes/config.php"
                                                 </section> -->
                                                 <div class="row py-3">
                                                     <div class="row">
-                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div
+                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1093,7 +1124,8 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div
+                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1120,7 +1152,8 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div
+                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1147,7 +1180,8 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div
+                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1174,7 +1208,8 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div
+                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1201,7 +1236,8 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div
+                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card h-100 card-plain border">
                                                                 <div
                                                                     class="card-body d-flex flex-column justify-content-center text-center">
@@ -1219,15 +1255,35 @@ require "../includes/config.php"
                                             <div class="tab-pane fade" id="chart-tab" role="tabpanel"
                                                 aria-labelledby="chart-tab" tabindex="0">
                                                 <!-- chart goes here -->
-
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <table class="table borderless">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="tooth" data-tooth-number="1">1</td>
+                                                                    <td class="tooth" data-tooth-number="2">2</td>
+                                                                    <td class="tooth" data-tooth-number="3">3</td>
+                                                                    <!-- Add more tooth cells as needed -->
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tooth" data-tooth-number="4">4</td>
+                                                                    <td class="tooth" data-tooth-number="5">5</td>
+                                                                    <td class="tooth" data-tooth-number="6">6</td>
+                                                                    <!-- Add more tooth cells as needed -->
+                                                                </tr>
+                                                                <!-- Add more rows as needed -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
+                        </div>
                 </section>
             </div>
             <!-- end main content -->
@@ -1246,7 +1302,22 @@ require "../includes/config.php"
     <!-- modals end -->
     <!--  javascripts -->
 
-
+    <script>
+        // Add click event listener to tooth cells
+        $(document).ready(function() {
+            $('.tooth').click(function() {
+                // var toothStatus = $(this).data('tooth-status');
+                // if (!toothStatus || toothStatus === 'missing') {
+                //     $(this).data('tooth-status', 'healthy').removeClass('selected-decayed selected-missing').addClass('selected-healthy');
+                // } else if (toothStatus === 'healthy') {
+                //     $(this).data('tooth-status', 'decayed').removeClass('selected-healthy').addClass('selected-decayed');
+                // } else {
+                //     $(this).data('tooth-status', 'missing').removeClass('selected-decayed').addClass('selected-missing');
+                // }
+                console.log($(this).text());
+            });
+        });
+    </script>
     <script src="../assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
