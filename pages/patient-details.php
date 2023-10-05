@@ -1066,7 +1066,7 @@ require "../includes/config.php"
                                                 </section> -->
                                                 <div class="row py-3">
                                                     <div class="row">
-                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1093,7 +1093,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1120,7 +1120,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1147,7 +1147,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1174,7 +1174,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1201,7 +1201,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card h-100 card-plain border">
                                                                 <div
                                                                     class="card-body d-flex flex-column justify-content-center text-center">
