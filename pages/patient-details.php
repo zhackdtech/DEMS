@@ -42,36 +42,9 @@ require "../includes/config.php"
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <style>
-        /* Customize your styles here */
-        .tooth {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #ccc;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-        }
 
-        .selected-healthy {
-            background-color: #66ff66;
-        }
+</style>
 
-        .selected-decayed {
-            background-color: #ff6666;
-        }
-
-        .selected-missing {
-            background-color: #cccccc;
-        }
-
-        /* Additional CSS for responsiveness */
-        @media (max-width: 768px) {
-            .tooth {
-                width: 30px;
-                height: 30px;
-            }
-        }
-    </style>
 <body>
     <main class="d-flex flex-nowrap">
         <!-- sidebar -->
@@ -1257,20 +1230,79 @@ require "../includes/config.php"
                                                 <!-- chart goes here -->
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <table class="table borderless">
+                                                        <table class="table borderless tooth-table">
                                                             <tbody>
                                                                 <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td class="tooth" data-tooth-number="1">
+                                                                        <a href="#">
+                                                                        
+                                                                        </a>
+                                                                    </td>
+                                                                    <td class="tooth" data-tooth-number="2">2</td>
+                                                                    <td class="tooth" data-tooth-number="3">3</td>
+                                                                    <td class="tooth" data-tooth-number="4">4</td>
+                                                                    <td class="tooth" data-tooth-number="5">5</td>
+                                                                    <td class="tooth" data-tooth-number="6">6</td>
+                                                                    <td class="tooth" data-tooth-number="7">7</td>
+                                                                    <td class="tooth" data-tooth-number="8">8</td>
+                                                                    <td class="tooth" data-tooth-number="9">9</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tooth" data-tooth-number="1">1</td>
+                                                                    <td class="tooth" data-tooth-number="2">2</td>
+                                                                    <td class="tooth" data-tooth-number="3">3</td>
+                                                                    <td class="tooth" data-tooth-number="4">4</td>
+                                                                    <td class="tooth" data-tooth-number="5">5</td>
+                                                                    <td class="tooth" data-tooth-number="6">6</td>
+                                                                    <td class="tooth" data-tooth-number="7">7</td>
+                                                                    <td class="tooth" data-tooth-number="8">8</td>
+                                                                    <td class="tooth" data-tooth-number="9">9</td>
+                                                                    <td class="tooth" data-tooth-number="10">10</td>
+                                                                    <td class="tooth" data-tooth-number="11">11</td>
+                                                                    <td class="tooth" data-tooth-number="12">12</td>
+                                                                    <td class="tooth" data-tooth-number="13">13</td>
+                                                                    <td class="tooth" data-tooth-number="14">14</td>
+                                                                    <td class="tooth" data-tooth-number="15">15</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tooth" data-tooth-number="1">1</td>
+                                                                    <td class="tooth" data-tooth-number="2">2</td>
+                                                                    <td class="tooth" data-tooth-number="3">3</td>
+                                                                    <td class="tooth" data-tooth-number="4">4</td>
+                                                                    <td class="tooth" data-tooth-number="5">5</td>
+                                                                    <td class="tooth" data-tooth-number="6">6</td>
+                                                                    <td class="tooth" data-tooth-number="7">7</td>
+                                                                    <td class="tooth" data-tooth-number="8">8</td>
+                                                                    <td class="tooth" data-tooth-number="9">9</td>
+                                                                    <td class="tooth" data-tooth-number="10">10</td>
+                                                                    <td class="tooth" data-tooth-number="11">11</td>
+                                                                    <td class="tooth" data-tooth-number="12">12</td>
+                                                                    <td class="tooth" data-tooth-number="13">13</td>
+                                                                    <td class="tooth" data-tooth-number="14">14</td>
+                                                                    <td class="tooth" data-tooth-number="15">15</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
                                                                     <td></td>
                                                                     <td class="tooth" data-tooth-number="1">1</td>
                                                                     <td class="tooth" data-tooth-number="2">2</td>
                                                                     <td class="tooth" data-tooth-number="3">3</td>
-                                                                    <!-- Add more tooth cells as needed -->
-                                                                </tr>
-                                                                <tr>
                                                                     <td class="tooth" data-tooth-number="4">4</td>
                                                                     <td class="tooth" data-tooth-number="5">5</td>
                                                                     <td class="tooth" data-tooth-number="6">6</td>
-                                                                    <!-- Add more tooth cells as needed -->
+                                                                    <td class="tooth" data-tooth-number="7">7</td>
+                                                                    <td class="tooth" data-tooth-number="8">8</td>
+                                                                    <td class="tooth" data-tooth-number="9">9</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
                                                                 </tr>
                                                                 <!-- Add more rows as needed -->
                                                             </tbody>
@@ -1303,20 +1335,20 @@ require "../includes/config.php"
     <!--  javascripts -->
 
     <script>
-        // Add click event listener to tooth cells
-        $(document).ready(function() {
-            $('.tooth').click(function() {
-                // var toothStatus = $(this).data('tooth-status');
-                // if (!toothStatus || toothStatus === 'missing') {
-                //     $(this).data('tooth-status', 'healthy').removeClass('selected-decayed selected-missing').addClass('selected-healthy');
-                // } else if (toothStatus === 'healthy') {
-                //     $(this).data('tooth-status', 'decayed').removeClass('selected-healthy').addClass('selected-decayed');
-                // } else {
-                //     $(this).data('tooth-status', 'missing').removeClass('selected-decayed').addClass('selected-missing');
-                // }
-                console.log($(this).text());
-            });
+    // Add click event listener to tooth cells
+    $(document).ready(function() {
+        $('.tooth').click(function() {
+            // var toothStatus = $(this).data('tooth-status');
+            // if (!toothStatus || toothStatus === 'missing') {
+            //     $(this).data('tooth-status', 'healthy').removeClass('selected-decayed selected-missing').addClass('selected-healthy');
+            // } else if (toothStatus === 'healthy') {
+            //     $(this).data('tooth-status', 'decayed').removeClass('selected-healthy').addClass('selected-decayed');
+            // } else {
+            //     $(this).data('tooth-status', 'missing').removeClass('selected-decayed').addClass('selected-missing');
+            // }
+            console.log($(this).text());
         });
+    });
     </script>
     <script src="../assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
