@@ -967,7 +967,10 @@ hr.horizontal-gray {
     line-height: normal;
     letter-spacing: -0.387px;
 }
-
+.input-required
+{
+    color:rgb(220, 53, 69) !important
+}
 @media (max-width: 1200px) {
     #sidebar {
         background-color: var(--white) !important;

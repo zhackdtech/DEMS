@@ -85,7 +85,7 @@ require "../includes/config.php"
                             <div class="col-lg-4">
                                 <div class="card mb-4">
                                     <div class="card-body text-center">
-                                        <img src="../assets/img/users/administrator_male_500px.png" alt="avatar"
+                                        <img src="/assets/img/users/administrator_male_500px.png" alt="avatar"
                                             class="rounded-circle img-fluid" style="width: 150px;">
                                         <h5 class="my-3">Wilmarx John D. Cayabyab</h5>
                                         <p class="text-muted mb-1">Since Aug 23, 2023</p>

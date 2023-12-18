@@ -22,7 +22,7 @@
                 </div>
                 <div class="row p-2">
                     <div class="mb-3">
-                        <label for="password_input" class="form-label">Enter your password to continue:</label>
+                        <label for="password_input" class="form-label">Enter your password to continue:<span class="input-required">*</span></label>
                         <div class="input-group">
                             <span class="input-group-text border-right-0 bg-brand-danger text-white" id="password_input">
                                 <i class="fa-solid fa-lock"></i>

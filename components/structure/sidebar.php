@@ -109,7 +109,7 @@
 
     $('li#sidebar-items a').on("click", function () {
         console.log("<?php echo $_SERVER['SCRIPT_NAME']; ?>");
-        if ("<?php echo $_SERVER['SCRIPT_NAME']; ?>" != "/DEMS/index.php") {
+        if ("<?php echo $_SERVER['SCRIPT_NAME']; ?>" != "/index.php") {
             console.log($(this).attr('href'))
             localStorage.setItem('active', $(this).attr('href'));
             window.location.href = "../";
