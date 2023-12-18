@@ -63,7 +63,7 @@
                         <h6 class="dropdown-header">Messages</h6>
                         <a class="dropdown-item d-flex align-items-center" href="#">
                             <div class="dropdown-list-image me-3">
-                                <img class="rounded-circle" src="assets/img/users/administrator_male_500px.png" />
+                                <img class="rounded-circle" src="/assets/img/users/administrator_male_500px.png" />
                                 <div class="bg-success status-indicator"></div>
                             </div>
                             <div class="fw-bold">
@@ -142,7 +142,7 @@
                         <img class="border rounded-circle img-profile img-fluid" style="max-height:20px; max-width:20px"
                             src="/assets/img/users/administrator_male_500px.png" />
                     </a>
-                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in  animate slideIn"
+                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in  animate slideIn px-1"
                         style="background-color:#F8F9FA">
                         <a class="dropdown-item user-links p-4 py-2" href="#">
                             <i class="icon fas fa-user fa-sm fa-fw me-2 text-gray-400"></i> Profile

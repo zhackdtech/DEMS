@@ -3,7 +3,7 @@ require_once "components/default/clinic-cards.php";
 require_once "components/patients/patients.php";
 require "includes/DateFnc.php";
 require "includes/config.php"
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,8 @@ require "includes/config.php"
     <link rel="icon" type="image/png" sizes="512x512"
         href="assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
     <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,8 +83,8 @@ require "includes/config.php"
                         // instantiate our class ClinicCard
                         $clinicCard = new ClinicCard();
                         // these are sample data only
-                        $sample_addresses = array("Philippine - Laguna", "Philippine - Manila", "Philippine - Sta Cruz", "Philippine - Mindanao", "Japan - Tokyo", "Korea - Gangnam", );
-                        $sample_branch_name = array("DMS - Laguna", "DMS - Manila", "DMS - Sta Cruz", "DMS - Mindanao", "DMS - Tokyo", "DMS - Gangnam", );
+                        $sample_addresses = array("Philippine - Laguna", "Philippine - Manila", "Philippine - Sta Cruz", "Philippine - Mindanao", "Japan - Tokyo", "Korea - Gangnam",);
+                        $sample_branch_name = array("DMS - Laguna", "DMS - Manila", "DMS - Sta Cruz", "DMS - Mindanao", "DMS - Tokyo", "DMS - Gangnam",);
                         // loop through your data
                         for ($i = 0; $i <= count($sample_addresses) - 1; $i++) {
                             // feed the data to the class->getClinic()
@@ -338,7 +339,9 @@ require "includes/config.php"
     </script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
