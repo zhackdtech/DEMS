@@ -41,9 +41,6 @@ require "../includes/config.php"
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
-<style>
-
-</style>
 
 <body>
     <main class="d-flex flex-nowrap">
@@ -88,7 +85,7 @@ require "../includes/config.php"
                             <div class="col-lg-4">
                                 <div class="card mb-4">
                                     <div class="card-body text-center">
-                                        <img src="../assets/img/users/administrator_male_500px.png" alt="avatar"
+                                        <img src="/assets/img/users/administrator_male_500px.png" alt="avatar"
                                             class="rounded-circle img-fluid" style="width: 150px;">
                                         <h5 class="my-3">Wilmarx John D. Cayabyab</h5>
                                         <p class="text-muted mb-1">Since Aug 23, 2023</p>
@@ -1069,8 +1066,7 @@ require "../includes/config.php"
                                                 </section> -->
                                                 <div class="row py-3">
                                                     <div class="row">
-                                                        <div
-                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1097,8 +1093,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div
-                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1125,8 +1120,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div
-                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1153,8 +1147,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div
-                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1181,8 +1174,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div
-                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-blog card-plain border-0">
                                                                 <div class="position-relative">
                                                                     <a class="d-block shadow-xl border-radius-xl">
@@ -1209,8 +1201,7 @@ require "../includes/config.php"
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div
-                                                            class="col-xl-4 col-lg-6 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
+                                                        <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card h-100 card-plain border">
                                                                 <div
                                                                     class="card-body d-flex flex-column justify-content-center text-center">
@@ -1228,94 +1219,15 @@ require "../includes/config.php"
                                             <div class="tab-pane fade" id="chart-tab" role="tabpanel"
                                                 aria-labelledby="chart-tab" tabindex="0">
                                                 <!-- chart goes here -->
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <table class="table borderless tooth-table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td class="tooth" data-tooth-number="1">
-                                                                        <a href="#">
-                                                                        
-                                                                        </a>
-                                                                    </td>
-                                                                    <td class="tooth" data-tooth-number="2">2</td>
-                                                                    <td class="tooth" data-tooth-number="3">3</td>
-                                                                    <td class="tooth" data-tooth-number="4">4</td>
-                                                                    <td class="tooth" data-tooth-number="5">5</td>
-                                                                    <td class="tooth" data-tooth-number="6">6</td>
-                                                                    <td class="tooth" data-tooth-number="7">7</td>
-                                                                    <td class="tooth" data-tooth-number="8">8</td>
-                                                                    <td class="tooth" data-tooth-number="9">9</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="tooth" data-tooth-number="1">1</td>
-                                                                    <td class="tooth" data-tooth-number="2">2</td>
-                                                                    <td class="tooth" data-tooth-number="3">3</td>
-                                                                    <td class="tooth" data-tooth-number="4">4</td>
-                                                                    <td class="tooth" data-tooth-number="5">5</td>
-                                                                    <td class="tooth" data-tooth-number="6">6</td>
-                                                                    <td class="tooth" data-tooth-number="7">7</td>
-                                                                    <td class="tooth" data-tooth-number="8">8</td>
-                                                                    <td class="tooth" data-tooth-number="9">9</td>
-                                                                    <td class="tooth" data-tooth-number="10">10</td>
-                                                                    <td class="tooth" data-tooth-number="11">11</td>
-                                                                    <td class="tooth" data-tooth-number="12">12</td>
-                                                                    <td class="tooth" data-tooth-number="13">13</td>
-                                                                    <td class="tooth" data-tooth-number="14">14</td>
-                                                                    <td class="tooth" data-tooth-number="15">15</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="tooth" data-tooth-number="1">1</td>
-                                                                    <td class="tooth" data-tooth-number="2">2</td>
-                                                                    <td class="tooth" data-tooth-number="3">3</td>
-                                                                    <td class="tooth" data-tooth-number="4">4</td>
-                                                                    <td class="tooth" data-tooth-number="5">5</td>
-                                                                    <td class="tooth" data-tooth-number="6">6</td>
-                                                                    <td class="tooth" data-tooth-number="7">7</td>
-                                                                    <td class="tooth" data-tooth-number="8">8</td>
-                                                                    <td class="tooth" data-tooth-number="9">9</td>
-                                                                    <td class="tooth" data-tooth-number="10">10</td>
-                                                                    <td class="tooth" data-tooth-number="11">11</td>
-                                                                    <td class="tooth" data-tooth-number="12">12</td>
-                                                                    <td class="tooth" data-tooth-number="13">13</td>
-                                                                    <td class="tooth" data-tooth-number="14">14</td>
-                                                                    <td class="tooth" data-tooth-number="15">15</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td class="tooth" data-tooth-number="1">1</td>
-                                                                    <td class="tooth" data-tooth-number="2">2</td>
-                                                                    <td class="tooth" data-tooth-number="3">3</td>
-                                                                    <td class="tooth" data-tooth-number="4">4</td>
-                                                                    <td class="tooth" data-tooth-number="5">5</td>
-                                                                    <td class="tooth" data-tooth-number="6">6</td>
-                                                                    <td class="tooth" data-tooth-number="7">7</td>
-                                                                    <td class="tooth" data-tooth-number="8">8</td>
-                                                                    <td class="tooth" data-tooth-number="9">9</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <!-- Add more rows as needed -->
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
+                    </div>
                 </section>
             </div>
             <!-- end main content -->
@@ -1334,22 +1246,7 @@ require "../includes/config.php"
     <!-- modals end -->
     <!--  javascripts -->
 
-    <script>
-    // Add click event listener to tooth cells
-    $(document).ready(function() {
-        $('.tooth').click(function() {
-            // var toothStatus = $(this).data('tooth-status');
-            // if (!toothStatus || toothStatus === 'missing') {
-            //     $(this).data('tooth-status', 'healthy').removeClass('selected-decayed selected-missing').addClass('selected-healthy');
-            // } else if (toothStatus === 'healthy') {
-            //     $(this).data('tooth-status', 'decayed').removeClass('selected-healthy').addClass('selected-decayed');
-            // } else {
-            //     $(this).data('tooth-status', 'missing').removeClass('selected-decayed').addClass('selected-missing');
-            // }
-            console.log($(this).text());
-        });
-    });
-    </script>
+
     <script src="../assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1cf0552cf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

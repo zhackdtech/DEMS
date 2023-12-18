@@ -10,7 +10,7 @@
                 <div class="row p-2 px-3">
                     <div class="col-12 col-lg-6 p-1">
                         <div class="mb-3">
-                            <label for="clinic_address" class="form-label">Branch Address</label>
+                            <label for="clinic_address" class="form-label">Branch Address<span class="input-required">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text border-right-0 bg-dark-blue text-white"
                                     id="clinic_address">
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-12 col-lg-6 p-1">
                         <div class="mb-3">
-                            <label for="clinic_name" class="form-label">Branch Name</label>
+                            <label for="clinic_name" class="form-label">Branch Name<span class="input-required">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text border-right-0 bg-dark-blue text-white" id="clinic_name">
                                     <i class="fa-solid fa-id-card"></i>
@@ -39,7 +39,7 @@
                 <div class="row p-2 px-3">
                     <div class="col-12 col-lg-6 p-1">
                         <div class="mb-3">
-                            <label for="branch_mobile" class="form-label">Branch Mobile</label>
+                            <label for="branch_mobile" class="form-label">Branch Mobile<span class="input-required">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text border-right-0 bg-dark-blue text-white"
                                     id="branch_mobile">
