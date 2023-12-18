@@ -22,7 +22,7 @@
                 <div class="row py-2 px-3">
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="clinic_name" class="form-label">Lastname</label>
+                            <label for="clinic_name" class="form-label">Lastname<span class="input-required">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text border-right-0  text-dark" id="last_name">
                                     <i class="fa-solid fa-id-card"></i>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="clinic_name" class="form-label">Firstname</label>
+                            <label for="clinic_name" class="form-label">Firstname<span class="input-required">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="first_name">
                                     <i class="fa-solid fa-id-card"></i>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="clinic_name" class="form-label">Middle name</label>
+                            <label for="clinic_name" class="form-label">Middle name<span class="input-required">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="middle_name">
                                     <i class="fa-solid fa-id-card"></i>
@@ -79,7 +79,7 @@
                 <div class="row px-3 py-2">
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="gender" class="form-label">Gender</label>
+                            <label for="gender" class="form-label">Gender<span class="input-required">*</span></label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="gender">
                                     <div class="dropdown-center clinic-dropdown">
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="civil_status" class="form-label">Civil status</label>
+                            <label for="civil_status" class="form-label">Civil status<span class="input-required">*</span></label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="civil_status">
                                     <div class="dropdown-center clinic-dropdown">
@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-12 col-lg-6 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="birthday" class="form-label">Birthday</label>
+                            <label for="birthday" class="form-label">Birthday<span class="input-required">*</span></label>
                             <div class="input-group date mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="birthday">
                                     <i class="fa-solid fa-cake-candles"></i>
@@ -158,7 +158,7 @@
                 <div class="row px-3 py-2">
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-3">
-                            <label for="mobile" class="form-label">Mobile</label>
+                            <label for="mobile" class="form-label">Mobile<span class="input-required">*</span></label>
                             <div class="input-group date mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="mobile">
                                     <i class="fa-solid fa-plus"></i><i class="fa-solid fa-6"></i><i
@@ -223,7 +223,7 @@
                 <div class="row px-3 py-2">
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-6">
-                            <label for="guardian" class="form-label">Guardian name</label>
+                            <label for="guardian" class="form-label">Guardian name<span class="input-required">*</span></label>
                             <div class="input-group date mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="guardian">
                                     <i class="fa-solid fa-user"></i>
@@ -234,7 +234,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-6">
-                            <label for="guardian" class="form-label">Guardian contact</label>
+                            <label for="guardian" class="form-label">Guardian contact<span class="input-required">*</span></label>
                             <div class="input-group date mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue" id="guardian">
                                     <i class="fa-solid fa-hashtag"></i>
@@ -246,7 +246,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-6 p-1">
                         <div class="mb-6">
-                            <label for="grd_relationship" class="form-label">Relationship</label>
+                            <label for="grd_relationship" class="form-label">Relationship<span class="input-required">*</span></label>
                             <div class="input-group date mb-3">
                                 <span class="input-group-text border-right-0  color-brand-darkblue"
                                     id="grd_relationship">

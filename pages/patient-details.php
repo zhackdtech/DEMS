@@ -9,29 +9,29 @@ require "../includes/config.php"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEMS - Main</title>
+    <title>Patient Details - DEMS</title>
     <meta name="twitter:title" content="BS DASHBOARD">
     <meta name="twitter:card" content="summary">
-    <meta property="og:image" content="../assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
-    <meta name="description" content="Dental Management System">
+    <meta property="og:image" content="/assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
+    <meta name="description" content="Dental Management System - Patient Details">
     <meta property="og:type" content="website">
-    <meta name="twitter:image" content="../assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
+    <meta name="twitter:image" content="/assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
     <meta name="twitter:description" content="Dental Management System">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180"
-        href="../assets/img/dashboard_180px.png?h=83b47f8c1fc6813f9b150537fe1875be">
+        href="/assets/img/dashboard_180px.png?h=83b47f8c1fc6813f9b150537fe1875be">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="../assets/img/dashboard_16px.png?h=6c72b632aa2e2ff93e47f966f55f290f">
+        href="/assets/img/dashboard_16px.png?h=6c72b632aa2e2ff93e47f966f55f290f">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="../assets/img/dashboard_32px.png?h=bdccac879571d7aaf1a357983bbd29e4">
+        href="/assets/img/dashboard_32px.png?h=bdccac879571d7aaf1a357983bbd29e4">
     <link rel="icon" type="image/png" sizes="180x180"
-        href="../assets/img/dashboard_180px.png?h=83b47f8c1fc6813f9b150537fe1875be">
+        href="/assets/img/dashboard_180px.png?h=83b47f8c1fc6813f9b150537fe1875be">
     <link rel="icon" type="image/png" sizes="192x192"
-        href="../assets/img/dashboard_192px.png?h=7d3a56ed4bdae666ba4d6567535ca937">
+        href="/assets/img/dashboard_192px.png?h=7d3a56ed4bdae666ba4d6567535ca937">
     <link rel="icon" type="image/png" sizes="512x512"
-        href="../assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
+        href="/assets/img/dashboard_512px.png?h=7685959fa84ebd0638a6e56471c1884b">
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -100,7 +100,7 @@ require "../includes/config.php"
                                     <div class="card-header bg-transparent px-3 border-0">
                                         <div class="d-flex pt-3 justify-content-between">
                                             <p class="my-card-title">Patient Details</p>
-                                            <a href="#" data-bs-toggle="tooltip" title="Edit details">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                         </div>
@@ -1242,7 +1242,201 @@ require "../includes/config.php"
         <!-- end main container -->
     </main>
     <!-- modals -->
-
+    <div class="modal animate slideIn" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-white" style="background:#344767">
+                    <h1 class="modal-title fs-5 clinic-modal-title" id="exampleModalLabel">Edit personal info</h1>
+                </div>
+                <div class="modal-body clinic-modal-body">
+                    <div class="row p-2 px-3">
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">LASTNAME</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </span>
+                                    <input type="text" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">FIRSTNAME</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </span>
+                                    <input type="text" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">MIDDLE NAME</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </span>
+                                    <input type="text" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-2 px-3">
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">BIRTHDAY</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-cake-candles"></i>
+                                    </span>
+                                    <input type="date" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">AGE</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-id-badge"></i>
+                                    </span>
+                                    <input type="number" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">RELIGION</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-church"></i>
+                                    </span>
+                                    <input type="number" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-2 px-3">
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">MOBILE</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-mobile"></i>
+                                    </span>
+                                    <input type="number"
+                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').slice(0, 11);"
+                                        class="clinic-modal-input form-control border-left-0" id="clinic_address"
+                                        style="color:var(--color-dark)" aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">EMAIL</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <input type="email" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">OCCUPATION</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-suitcase"></i>
+                                    </span>
+                                    <input type="number" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-2 px-3">
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">GUARDIAN</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <input type="TEXT" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">GUARDIAN CONTACT</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-mobile"></i>
+                                    </span>
+                                    <input type="number" class="clinic-modal-input form-control border-left-0"
+                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').slice(0, 11);"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="mb-3">
+                                <label for="clinic_address" class="form-label">RELATIONSHIP</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-right-0 bg-dark-blue text-white"
+                                        id="clinic_address">
+                                        <i class="fa-solid fa-people-arrows"></i>
+                                    </span>
+                                    <input type="number" class="clinic-modal-input form-control border-left-0"
+                                        id="clinic_address" style="color:var(--color-dark)"
+                                        aria-describedby="clinic_address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="clinic-modal-button danger px-1" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="clinic-modal-button success px-1">Save</button>
+                    <!-- <button type="button" class="clinic-modal-button danger px-1" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="clinic-modal-button success px-1">Save</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- modals end -->
     <!--  javascripts -->
 
