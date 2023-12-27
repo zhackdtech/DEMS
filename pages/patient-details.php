@@ -2,7 +2,8 @@
 require "../includes/DateFnc.php";
 require "../includes/config.php";
 require_once "../components/patient-details/edit-medical-record-modal.php";
-require_once "../components/patient-details//edit-patient-details.php"
+require_once "../components/patient-details/edit-patient-details.php";
+require_once "../components/patient-details/delete-patient.php"
     ?>
 
 <!DOCTYPE html>
@@ -74,9 +75,9 @@ require_once "../components/patient-details//edit-patient-details.php"
                     </div>
                     <div class="container py-1">
                         <div class="d-flex flex-row-reverse py-3">
-                            <button class="my-btn-primary ms-1 bg-brand-danger">
+                            <button class="my-btn-primary ms-1 bg-brand-danger" data-bs-toggle="modal" data-bs-target="#archive_patient">
                                 <i class="fa-solid fa-trash"></i>
-                                &nbsp;Delete
+                                &nbsp;Archive
                             </button>
                             <button class="my-btn-primary ms-1">
                                 <i class="fa-solid fa-print"></i>

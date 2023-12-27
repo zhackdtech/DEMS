@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header text-white" style="background:#344767">
-                <h1 class="modal-title fs-5 clinic-modal-title" id="exampleModalLabel">Archive Clinic</h1>
+                <h1 class="modal-title fs-5 clinic-modal-title" id="exampleModalLabel">Archive confirmation</h1>
             </div>
             <div class="modal-body clinic-modal-body">
                 <div class="container pt-5">
@@ -17,7 +17,7 @@
                         Archive clinic_name?
                     </h3>
                     <p class="archive-clinic-modal-description text-center ">
-                        The data of the clinics that are in archive mode won't be accessible, continue?
+                        The data of clinics that are in archive mode won't be accessible, continue?
                     </p>
                 </div>
                 <div class="row p-2">

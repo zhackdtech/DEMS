@@ -16,7 +16,7 @@
                                     </span>
                                     <input type="text" class="clinic-modal-input form-control border-left-0"
                                         id="clinic_address" style="color:var(--color-dark)"
-                                        aria-describedby="clinic_address">
+                                        aria-describedby="clinic_address" required>
                                 </div>
                             </div>
                         </div>
@@ -30,7 +30,7 @@
                                     </span>
                                     <input type="text" class="clinic-modal-input form-control border-left-0"
                                         id="clinic_address" style="color:var(--color-dark)"
-                                        aria-describedby="clinic_address">
+                                        aria-describedby="clinic_address" required>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                                     </span>
                                     <input type="text" class="clinic-modal-input form-control border-left-0"
                                         id="clinic_address" style="color:var(--color-dark)"
-                                        aria-describedby="clinic_address">
+                                        aria-describedby="clinic_address" required>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                     </span>
                                     <input type="date" class="clinic-modal-input form-control border-left-0"
                                         id="clinic_address" style="color:var(--color-dark)"
-                                        aria-describedby="clinic_address">
+                                        aria-describedby="clinic_address" required>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                                     </span>
                                     <input type="number" class="clinic-modal-input form-control border-left-0"
                                         id="clinic_address" style="color:var(--color-dark)"
-                                        aria-describedby="clinic_address">
+                                        aria-describedby="clinic_address" required>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                                     <input type="" class="clinic-modal-input form-control border-left-0"
                                         id="clinic_address" style="color:var(--color-dark)"
                                         oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').slice(0, 11);"
-                                        aria-describedby="clinic_address">
+                                        aria-describedby="clinic_address"  required>
                                 </div>
                             </div>
                         </div>
