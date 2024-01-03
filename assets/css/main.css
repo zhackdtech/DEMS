@@ -996,3 +996,13 @@ hr.horizontal-gray {
         height: 100vh;
     }
 }
+.consent-label
+{
+    color: #252F40;
+    font-family: "Open sans";
+    /* font-size: 14px; */
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+    letter-spacing: -0.387px;
+}
