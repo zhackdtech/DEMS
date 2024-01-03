@@ -3,7 +3,8 @@ require "../includes/DateFnc.php";
 require "../includes/config.php";
 require_once "../components/patient-details/edit-medical-record-modal.php";
 require_once "../components/patient-details/edit-patient-details.php";
-require_once "../components/patient-details/delete-patient.php"
+require_once "../components/patient-details/delete-patient.php";
+require_once "../components/patient-details/consent-form.php";
     ?>
 
 <!DOCTYPE html>
@@ -75,7 +76,8 @@ require_once "../components/patient-details/delete-patient.php"
                     </div>
                     <div class="container py-1">
                         <div class="d-flex flex-row-reverse py-3">
-                            <button class="my-btn-primary ms-1 bg-brand-danger" data-bs-toggle="modal" data-bs-target="#archive_patient">
+                            <button class="my-btn-primary ms-1 bg-brand-danger" data-bs-toggle="modal"
+                                data-bs-target="#archive_patient">
                                 <i class="fa-solid fa-trash"></i>
                                 &nbsp;Archive
                             </button>
@@ -94,7 +96,8 @@ require_once "../components/patient-details/delete-patient.php"
                                         <p class="text-muted mb-1">Since Aug 23, 2023</p>
                                         <p class="text-muted mb-4">DMS - Manila</p>
                                         <div class="d-flex justify-content-center mb-2">
-                                            <button type="button" class="my-btn-primary border-0">Consent form</button>
+                                            <button type="button" class="my-btn-primary border-0" data-bs-toggle="modal"
+                                                data-bs-target="#consent_form">Consent form</button>
                                             <button type="button" class="my-btn-secondary ms-1">Message</button>
                                         </div>
                                     </div>
@@ -826,8 +829,7 @@ require_once "../components/patient-details/delete-patient.php"
                                             </div>
                                             <div class="tab-pane fade" id="procedures-tab" role="tabpanel"
                                                 aria-labelledby="procedures-tab" tabindex="0">
-                                                <div class="d-flex flex-row-reverse py-1"><button
-                                                        class="add-patient">
+                                                <div class="d-flex flex-row-reverse py-1"><button class="add-patient">
                                                         <i class="fa-solid fa-square-plus"></i>
                                                         &nbsp;Add procedures
                                                     </button>
@@ -1204,7 +1206,8 @@ require_once "../components/patient-details/delete-patient.php"
                                                         </div>
                                                         <div class="col-xl-4 col-md-6 col-lg-4 mb-xl-0 mb-4 py-3">
                                                             <div class="card card-plain border">
-                                                                <div class="card-body d-flex flex-column justify-content-center text-center">
+                                                                <div
+                                                                    class="card-body d-flex flex-column justify-content-center text-center">
                                                                     <a href="javascript:;">
                                                                         <i class="fa fa-plus text-secondary mb-3"
                                                                             aria-hidden="true"></i>
