@@ -1,4 +1,6 @@
 <?php
+
+require_once "./components/patients/modals/edit-patient-modal.php";
 class Patients
 {
     public function startTable()
@@ -63,7 +65,7 @@ class Patients
                     <?php echo $registration_date ?>
                 </td>
                 <td>
-                    <a href="#">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#edit_patient_modal">
                         <i class="fa-solid fa-pen-to-square"></i>
                     </a>
                 </td>
